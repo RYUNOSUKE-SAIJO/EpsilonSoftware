@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.mv {
+    position: relative;
+    height: 100vh;
+    min-height: 710px;
+    background-color: #F2F5F7;
+}
+
+.mv__inner {
+    height: inherit;
+    min-height: inherit;
+}
+
+.mv__titleWrap {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    @include mq(md){
+        left: calc(50% - min(50vw, #{550px}));
+        transform: translateY(-50%);
+        width: initial;
+    }
+}
+
+.mv__title,
+.mv__title img {
+    height: inherit;
+    min-height: inherit;
+}
+
+.mv__title img {
+    object-fit: contain;
+    width: 84vw;
+    max-width: 450px;
+}
+
+
+// swiper //
+.mv__swiper {
+    margin-right: calc(50% - 50vw);
+    position: absolute;
+    top: 55vh;
+    margin: auto;
+    width: 100%;
+    @include mq('md') {
+        top: 42vh;
+    }
+}
+
+
+// recruit //
+.mv__recruitBanner {
+    position: absolute;
+    z-index: 10;
+    top: 100vh;
+    width: 100%;
+    @include mq('sm') {
+        top: 34vh;
+        right: 0;
+        width: auto;
+    }
+}
+
+.mv__recruitBanner a picture img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: cover;
+    width: 100%;
+    @include mq('sm') {
+        max-width: 70px;
+        aspect-ratio: 70/210;
+    }
+}

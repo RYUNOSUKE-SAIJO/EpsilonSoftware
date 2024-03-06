@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.l-header {
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.l-companyInfo {
+
+}
+
+.l-news {
+    margin-top: 78px;
+    @include mq('md') {
+        margin-top: 140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

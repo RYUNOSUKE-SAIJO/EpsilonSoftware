@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>イプシロン</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!----- Google Font ----->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link href="./assets/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://kit.fontawesome.com/66a0693602.js" crossorigin="anonymous"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="header l-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img src="./assets/images/common/logo02.png" alt="会社ロゴ">
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__navItems">
+            <li class="header__navItem header__navItem--plus">
+              <a href="#">会社情報&nbsp;<span></span></a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">お知らせ</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">受託開発事業<br class="u-tab">について</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">実績紹介</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">採用情報</a>
+            </li>
+            <li class="header__navItem header__navItem--facebook">
+              <a href="#"><span></span></a>
+            </li>
+            <li class="header__navItem header__navItem--contact">
+              <a href="#"><span></span>お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="headerHamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__drawer js-drawer">
+          <nav class="header__drawerNav">
+            <ul class="header__drawerItems">
+              <li class="header__drawerItem header__drawerItem--plus">
+                <a href="#">会社情報&nbsp;<span></span></a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">お知らせ</a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">受託開発事業<br class="u-tab">について</a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">実績紹介</a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">採用情報</a>
+              </li>
+              <li class="header__drawerItem header__drawerItem--facebook">
+                <a href="#"><span></span></a>
+              </li>
+              <li class="header__drawerItem header__drawerItem--contact">
+                <a href="#"><span></span>お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="mv">
+        <div class="mv__inner">
+          <div class="mv__titleWrap">
+            <h2 class="mv__title">
+              <img src="./assets/images/common/KV.svg" alt="メインビュータイトル">
+            </h2>
+          </div>
+          <div class="mv__swiper">
+            <div class="swiper js-mv__swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image01_dummy.jpg" alt="スライド画像1">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image02_dummy.jpg" alt="スライド画像2">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image03.jpg" alt="スライド画像3">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image04.jpg" alt="スライド画像4">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image05.jpg" alt="スライド画像5">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image06.jpg" alt="スライド画像6">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mv__recruitBanner">
+            <a href="#">
+              <picture>
+                <source srcset="./assets/images/common/recruit_banner_02.svg" media="(max-width: 600px)">
+                <img src="./assets/images/common/recruit_banner.svg" alt="採用情報バナー">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="companyInfo l-companyInfo">
+        <div class="companyInfo__inner inner">
+          <div class="companyInfo__container">
+            <div class="companyInfo-sectionTitle sectionTitle">
+              <div class="sectionTitle__subWrap">
+                <span class="sectionTitle__subBar"></span>
+                <p class="sectionTitle__sub">company&nbsp;info</p>
+              </div>
+              <h3 class="sectionTitle__main">コンピューターで広がる<br>もっとワクワクな<br class="u-tab">毎日を</h3>
+            </div>
+            <div class="companyInfo__body">
+              <p class="companyInfo__text">
+              私たち株式会社イプシロンソフトウェアは<br>
+              ゲーム、コンピューター、スマートフォン向けのソフトウェア開発、Webシステムの開発などを行っている企業です。<br>
+              使うことで毎日がもっと楽しく、<br>
+              もっと幸せになるようなソフトウェア開発を目指しております。
+              </p>
+            </div>
+          </div>
+          <div class="companyInfo__btn">
+            <div class="btn__wrap">
+              <div class="btn">
+                <a href="#"></a>
+              </div>
+              <p class="btn__text">もっと見る</p>
+            </div>
+          </div>
+        </div>
+        <div class="companyInfo__decorationImg">
+          <img src="./assets/images/common/imfo_image.svg" alt="">
+        </div>
+      </section>
+
+      <section class="news l-news">
+        <div class="news__inner inner">
+          <div class="news__top">
+            <div class="news-sectionTitle sectionTitle">
+              <div class="sectionTitle__subWrap">
+                <span class="sectionTitle__subBar"></span>
+                <p class="sectionTitle__sub">news</p>
+              </div>
+              <h3 class="sectionTitle__main">お知らせ</h3>
+            </div>
+            <ul class="news__tabList">
+              <li class="news__tabItem is-active">すべて</li>
+              <li class="news__tabItem">重要</li>
+              <li class="news__tabItem">お知らせ</li>
+              <li class="news__tabItem">採用情報</li>
+            </ul>
+          </div>
+          <ul class="news__postList">
+            <li class="news__postItem">
+              <div class="news__info">
+                <p class="news__date">2024.01.27</p>
+                <p class="news__tag">採用情報</p>
+              </div>
+              <div class="news__body">
+                <p class="news__text">●年度会社説明会のお知らせ</p>
+              </div>
+            </li>
+            <li class="news__postItem">
+              <div class="news__info">
+                <p class="news__date">2024.01.27</p>
+                <p class="news__tag">お知らせ</p>
+              </div>
+              <div class="news__body">
+                <p class="news__text">インターネット回線切り替えに伴う電話不通のお知らせ</p>
+              </div>
+            </li>
+            <li class="news__postItem">
+              <div class="news__info">
+                <p class="news__date">2024.01.27</p>
+                <p class="news__tag">重要</p>
+              </div>
+              <div class="news__body">
+                <p class="news__text">年末年始休業について</p>
+              </div>
+            </li>
+            <li class="news__postItem">
+              <div class="news__info">
+                <p class="news__date">2024.01.27</p>
+                <p class="news__tag">お知らせ</p>
+              </div>
+              <div class="news__body">
+                <p class="news__text">ウェブ情報誌「●●●●●」に掲載されました</p>
+              </div>
+            </li>
+          </ul>
+          <div class="news__btn">
+            <div class="btn__wrap">
+              <div class="btn">
+                <a href="#"></a>
+              </div>
+              <p class="btn__text">もっと見る</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+
+    <footer>
+    </footer>
+  </div>
+</body>
+
+
+
+<!----- 共通パーツ ----->
+
+<!-- <div class="btn__wrap">
+  <div class="btn">
+    <a href="#"></a>
+  </div>
+  <p class="btn__text">もっと見る</p>
+</div>
+
+
+<div class="sectionTitle">
+  <div class="sectionTitle__subWrap">
+    <span class="sectionTitle__subBar"></span>
+    <p class="sectionTitle__sub">Company info</p>
+  </div>
+  <h3 class="sectionTitle__main">お知らせ</h3>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+</html>

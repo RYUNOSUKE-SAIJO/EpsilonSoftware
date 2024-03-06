@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sectionTitle__subWrap {
+  position: absolute;
+  display: flex;
+  top: -30px;
+  left: 0;
+}
+
+.sectionTitle__sub {
+  font-size: 16px;
+  font-family: $second-font;
+  font-weight: 700;
+  color: $main-color;
+}
+
+.sectionTitle__sub::first-letter {
+  text-transform: uppercase;
+}
+
+.sectionTitle__subBar {
+  position: absolute;
+  background: $main-color;
+  display: inline-block;
+  height: 2px;
+  transform: rotate(120deg);
+  width: 40px;
+  left: -30px;
+}
+
+.sectionTitle__main {
+  font-size: 30px;
+  font-family: $main-font;
+  font-weight: 700;
+  color: $black;
+  @include mq('md') {
+    font-size: 36px;
+  }
+}
+
+

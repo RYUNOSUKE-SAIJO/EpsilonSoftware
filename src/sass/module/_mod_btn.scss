@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.btn {
+  text-align: center;
+}
+
+.btn a {
+  background-color: #fff;
+  border: 1px solid $main-color;
+  border-radius: 50px;
+  color: $main-color;
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+  position: relative;
+  text-decoration: none;
+  width: 52px;
+  height: 52px;
+}
+/* 通常の矢印(hoverで反転) */
+.btn a {
+  transition: all .5s;
+}
+
+.btn a::before {
+  border-right: 3px solid $main-color;
+  border-top: 3px solid $main-color;
+  content: "";
+  height: 12px;
+  margin: auto;
+  position: absolute;
+  right: 12px;
+  top: 17.5px;
+  transform: rotate(45deg);
+  transition: all .5s;
+  width: 12px;
+}
+
+.btn a::after {
+  border-right: 3px solid $main-color;
+  border-top: 3px solid $main-color;
+  top: 22px;
+  left: 12px;
+  content: "";
+  height: 0px;
+  width: 25px;
+  margin: auto;
+  position: absolute;
+  transition: all .5s;
+}
+
+.btn a:hover {
+  background-color: $main-color;
+  color: $main-color;
+}
+
+.btn a:hover::before {
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+.btn a:hover::after {
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+
+.btn__wrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+}
+
+.btn__text {
+  font-size: 14px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 700;
+}
