@@ -5,7 +5,7 @@
 }
 
 .btn a {
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid $main-color;
   border-radius: 50px;
   color: $main-color;
@@ -68,6 +68,8 @@
   gap: 20px;
   align-items: center;
   justify-content: end;
+  position: relative;
+  z-index: 2;
 }
 
 .btn__text {

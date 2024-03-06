@@ -2,8 +2,7 @@
 
 
 .companyInfo {
-  background-color: #F2F5F7;
-  position: relative;
+
 }
 
 .companyInfo__inner {
@@ -57,7 +56,7 @@
 .companyInfo__decorationImg {
   position: absolute;
   bottom: -60px;
-  left: 14%;
+  left: calc(50% - min(36vw, 500px));
 }
 
 .companyInfo__decorationImg img {

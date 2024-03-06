@@ -23,12 +23,14 @@
   }
 }
 
+
+// タブ //
+
 .news__tabList {
   display: flex;
   gap: 8px;
   align-items: center;
   padding: 30px 0 25px;
-  border-bottom: 1px solid #E5E5E5;
   justify-content: space-around;
   @include mq('md') {
     gap: 10px;
@@ -55,6 +57,9 @@
     color: #fff;
 }
 
+
+// ポスト //
+
 .news__postList {
 
 }
@@ -67,6 +72,10 @@
     align-items: center;
     padding: 17px 24px;
   }
+}
+
+.news__postItem:first-of-type {
+  border-top: 1px solid #E5E5E5;
 }
 
 .news__info {
@@ -115,9 +124,15 @@
 
 }
 
+
+// ボタン //
+
 .news__btn {
-  margin-top: 36px;
-  margin-left: auto;
+  margin-top: 30px;
+    margin-left: auto;
+    @include mq('md') {
+      margin-top: 36px;
+    }
 }
 
 
