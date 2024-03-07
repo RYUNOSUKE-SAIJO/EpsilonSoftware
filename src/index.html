@@ -402,16 +402,18 @@
 
     <footer>
       <div class="footer__inner inner">
-        <div class="footer__wrap">
+        <div class="footer__container">
           <div class="footer__body">
             <nav class="footer__nav">
               <ul class="footer__navList">
-                <li class="footer__navItem">
+                <li class="footer__navItem footer__navItem--borderTop">
                   <a class="footer__navItemTitle" href="#">会社情報</a>
                   <a class="footer__navItemText" href="#">代表挨拶</a>
                   <a class="footer__navItemText" href="#">会社概要・沿革</a>
                   <a class="footer__navItemText" href="#">アクセス</a>
                 </li>
+              </ul>
+              <ul class="footer__navList">
                 <li class="footer__navItem">
                   <a class="footer__navItemTitle" href="#">お知らせ</a>
                 </li>
@@ -428,17 +430,25 @@
                   <a class="footer__navItemTitle" href="#">採用情報</a>
                 </li>
               </ul>
-              <div class="footer__navOther">
-                <a class="footer__navOtherText" href="#">プレスキット</a>
-                <a class="footer__navOtherText" href="#">個人情報保護方針</a>
-                <a class="footer__navOtherText" href="#">情報セキュリティーポリシー</a>
-              </div>
+              <ul class="footer__navList footer__navList--others">
+                <li class="footer__navItem footer__navItem--other">
+                  <a class="footer__navItemText" href="#">プレスキット</a>
+                </li>
+                <li class="footer__navItem footer__navItem--other">
+                  <a class="footer__navItemText" href="#">個人情報保護方針</a>
+                </li>
+                <li class="footer__navItem footer__navItem--other">
+                  <a class="footer__navItemText" href="#">情報セキュリティーポリシー</a>
+                </li>
+              </ul>
             </nav>
           </div>
-          <div class="footer__foot">
-            <div class="footer__logoImg">
-              <img src="./assets/images/common/logo02s.png" alt="">
-            </div>
+          <div class="footer__logoImg">
+            <img src="./assets/images/common/logo02s.png" alt="">
+          </div>
+        </div>
+        <div class="footer__foot">
+          <div class="footer__footContainer">
             <div class="footer__infoWrap">
               <div class="footer__info">
                 <div class="footer__titleImg">
@@ -458,8 +468,8 @@
             </div>
           </div>
         </div>
-        <small class="footer__copyright">&copy;epsilon&nbsp;software&nbsp;inc.</small>
       </div>
+      <small class="footer__copyright">&copy;epsilon&nbsp;software&nbsp;inc.</small>
     </footer>
 
   </div>
