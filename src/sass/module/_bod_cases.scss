@@ -5,7 +5,11 @@
 }
 
 .cases__inner {
-
+  @include mq('md') {
+    display: flex;
+    align-items: center;
+    gap: 6%;
+  }
 }
 
 .cases__container {
@@ -15,10 +19,15 @@
 .cases__imgList {
   display: flex;
   gap: calc(100% * (16 / 390));
+  @include mq('md') {
+    margin-left: 16px;
+  }
 }
 
-.cases__imgItem {
-
+.cases__imgItem:nth-child(odd) {
+  @include mq('md') {
+    margin-top: 90px;
+  }
 }
 
 .cases__imgItem img {
@@ -26,6 +35,7 @@
   aspect-ratio: 119 / 255;
   height: auto;
   object-fit: cover;
+  max-width: 186px;
 }
 
 .cases__content {
@@ -35,7 +45,7 @@
 .cases__header {
   display: flex;
   align-items: end;
-  margin-top: 20px;
+  margin-top: 30px;
   @include mq('md') {
     margin-top: 0;
   }
@@ -51,6 +61,7 @@
 
 .cases__headerImg img {
   display: block;
+  max-width: 196px;
   aspect-ratio: 160 / 73;
   height: auto;
   object-fit: cover;

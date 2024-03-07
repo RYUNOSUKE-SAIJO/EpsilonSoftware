@@ -7,7 +7,7 @@
 }
 
 .sectionTitle__subWrap {
-  position: absolute;
+
   display: flex;
   top: -30px;
   left: 0;
@@ -39,6 +39,16 @@
   font-family: $main-font;
   font-weight: 700;
   color: $black;
+  @include mq('md') {
+    font-size: 36px;
+  }
+}
+
+.sectionTitle__main--white {
+  font-size: 30px;
+  font-family: $main-font;
+  font-weight: 700;
+  color: #ffffff;
   @include mq('md') {
     font-size: 36px;
   }

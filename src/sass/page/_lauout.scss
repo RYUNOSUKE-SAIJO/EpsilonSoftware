@@ -31,24 +31,17 @@
     }
 }
 
-// .l-ourBusiness::after {
-//     background-color: #F8F5F0;
-//     content: "";
-//     height: 618px;
-//     left: 0;
-//     position: absolute;
-//     top: 40px;
-//     width: 100%;
-//     z-index: -1;
-//     @include mq('md') {
-//         height: 100%;
-//     }
-// }
-
 .l-cases {
     margin-top: 70px;
     @include mq('md') {
         margin-top: 120px;
     }
+}
 
+.l-recruit {
+    background-color: #233943;
+    margin-top: 70px;
+    @include mq('md') {
+        margin-top: 160px;
+    }
 }
