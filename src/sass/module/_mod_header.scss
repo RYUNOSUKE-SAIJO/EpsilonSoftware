@@ -68,13 +68,13 @@
     text-transform: uppercase;
     white-space: nowrap;
     @include mq('lg') {
-      padding: 0 1vw;
-      font-size: 14px;
+        padding: 0 1vw;
+        font-size: 14px;
     }
 }
 
 .header__navItem.header__navItem--plus {
-  margin-right: 14px;
+    margin-right: 14px;
 }
 
 .header__navItem.header__navItem--plus span {
@@ -87,7 +87,7 @@
 	left: 0;
 	content: '\f055';
 	font-family: "Font Awesome 6 Free";
-  color: $main-color;
+    color: $main-color;
 }
 
 .header__navItem.header__navItem--facebook span {
@@ -118,7 +118,9 @@
 }
 
 
-// ハンバーガーメニュー //
+/* ===============================================
+# ハンバーガーメニュー
+=============================================== */
 
 .headerHamburger {
     margin: auto 0;
@@ -179,6 +181,10 @@
     top: prem(-2);
     transform: translateX(-50%) rotate(-45deg);
 }
+
+/* ===============================================
+#ドロワーメニュー
+=============================================== */
 
 .header__drawer {
     padding: prem(228) 0;

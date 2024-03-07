@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.contact {
+
+}
+
+.contact__inner {
+
+}
+
+.contact__container {
+
+}
+
+.contact__sectionTItleWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__sectionTitle {
+
+}
+
+.contact__body {
+  text-align: center;
+  margin-top: 16px;
+  @include mq('md') {
+    margin-top: 36px;
+  }
+}
+
+.contact__text {
+  font-size: 15px;
+  color: #000;
+  line-height : calc( 28 / 15);
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+
+// お問い合わせボタン //
+
+.contact__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    border-radius: 20px;
+    @include mq('md') {
+      margin-top: 42px;
+    }
+}
+
+.contact__btn a {
+    display: flex;
+    align-items: center;
+    padding: 28px 38px;
+    color: #fff;
+    background-color: $main-color;
+    border-radius: 10px;
+    @include mq('md') {
+      padding: 28px 64px;
+    }
+}
+
+.contact__btn span {
+    margin-right: 9px;
+    width: 26px;
+    height: 26px;
+    background: url(../images/common/mail_icon.svg) no-repeat center center / cover;
+}
