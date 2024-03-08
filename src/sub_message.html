@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>イプシロン</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!----- Google Font ----->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link href="./assets/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://kit.fontawesome.com/66a0693602.js" crossorigin="anonymous"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="header l-header js-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img src="./assets/images/common/logo02.png" alt="会社ロゴ">
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__navItems">
+            <li class="header__navItem header__navItem--plus">
+              <a href="#">会社情報&nbsp;<span></span></a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">お知らせ</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">受託開発事業について</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">実績紹介</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#">採用情報</a>
+            </li>
+            <li class="header__navItem header__navItem--facebook">
+              <a href="#"><span></span></a>
+            </li>
+            <li class="header__navItem header__navItem--contact">
+              <a href="#"><span></span>お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="headerHamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__drawer js-drawer">
+          <nav class="header__drawerNav">
+            <ul class="header__drawerItems">
+              <li class="header__drawerItem header__drawerItem--plus">
+                <a href="#">会社情報&nbsp;<span></span></a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">お知らせ</a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">受託開発事業<br class="u-tab">について</a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">実績紹介</a>
+              </li>
+              <li class="header__drawerItem">
+                <a href="#">採用情報</a>
+              </li>
+              <li class="header__drawerItem header__drawerItem--facebook">
+                <a href="#"><span></span></a>
+              </li>
+              <li class="header__drawerItem header__drawerItem--contact">
+                <a href="#"><span></span>お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="subMv">
+        <div class="subMv__inner">
+          <picture class="subMv__img">
+            <source srcset="./assets/images/common/subMessage_mv.jpg" media="(max-width: 768px)" />
+            <img src="./assets/images/common/subMessage_mv.jpg" alt="黄色の熱帯魚" />
+          </picture>
+          <div class="subMv__sectionTitle sectionTitle">
+            <div class="sectionTitle__subWrap">
+              <span class="sectionTitle__subBar"></span>
+              <p class="sectionTitle__sub">message</p>
+            </div>
+            <h3 class="sectionTitle__main sectionTitle__main--white">代表挨拶</h3>
+          </div>
+        </div>
+      </section>
+
+      <div class="breadcrumb breadcrumb-layout">
+        <div class="breadcrumb__inner inner">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item is-current"><a href="#">トップページ&nbsp;&nbsp;</a></li>
+            <li class="breadcrumb__item"><a href="#">>&nbsp;代表挨拶</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="recruitBanner">
+        <a href="#">
+          <picture>
+            <source srcset="./assets/images/common/recruit_banner_02.svg" media="(max-width: 600px)">
+            <img src="./assets/images/common/recruit_banner.svg" alt="採用情報バナー">
+          </picture>
+        </a>
+      </div> -->
+
+      <section class="message l-message">
+        <div class="message__inner inner">
+          <!----- 全体横並び ----->
+          <div class="message__container">
+            <!----- 写真 ----->
+            <div class="message__presidentImgWrap">
+              <div class="message__presidentImg">
+                <img src="./assets/images/common/president_photo.jpg" alt="代表取締役社長の写真">
+              </div>
+              <p class="message__presidentPost">代表取締役社長</p>
+              <p class="message__presidentName">渡部&nbsp;晋司</p>
+            </div>
+            <div class="message__content">
+              <h3 class="messageTitle">コンピューターで広がる<br>もっとワクワクな<br class="u-tab">毎日を</h3>
+              <div class="message__body">
+                <p class="message__text">
+                  株式会社 イプシロンソフトウェアは、島根県松江市に本拠地を置く企業です。 ゲームの開発や各種ソフトウェアの受託開発を行う目的で、2016年6月に設立されました。
+                </p>
+                <p class="message__text">
+                  ビデオゲームが誕生してから多くの時間が経ち、多くの人が様々なゲームを楽しむようになりました。 そしてそれは幅広い年代の方や性別を超え、今やゲームをプレイするということは多くの方がごく自然に体験するものとなりました。
+                  ゲームを楽しみ、クリアしたときの達成感や喜びを世界中の多くの方々に新しい体験として提供したい。 そしてその体験が長い年月が経ったあとで思い出として記憶に残るような作品となるようにしたい。 それこそが我々が目指すことです。
+                </p>
+                <p class="message__text"><a href="">(写真提供 : 山陰中央新報社)</a></p>
+              </div>
+            </div>
+            <div class="message__plofile plofile">
+              <div class="plofile__container">
+                <h3 class="plofile__title">プロフィール</h3>
+                <div class="plofile__bar"></div>
+                <div class="plofile__body">
+                  <p class="plofile__text">
+                    1984年 島根県松江市出身。
+                    島根大学教育学部附属中学校 (現：島根大学教育学部附属義務教育学校後期課程)、松江北高校、会津大学 コンピュータ理工学部 コンピュータソフトウェア学科 (現：コンピュータ理工学科) 卒。 コンピューターサイエンスを Minyi Guo
+                    (現：IEEEフェロー、上海交通大学主任教授) に師事し、グリッド・コンピューティングに関する研究をオリンパス株式会社と産学連携で実施。
+                    卒業後は 任天堂株式会社に入社し、家庭用ゲーム機向けソフトウェア、ゲーム開発用のツール、SDK(ソフトウェア開発キット) の開発に携わる。
+                    2012年よりグリー株式会社に入社。ソーシャルゲームプラットフォーム事業に従事。
+                    2013年より同社のリードエンジニアに就任し、スマートフォン向けゲームの開発に携わる。
+                    2016年に独立し、株式会社 イプシロンソフトウェアを設立、代表取締役社長に就任。
+                  </p>
+                  <p class="plofile__text">
+                    開発に携わった製品として、「Wii ショッピングチャンネル」「似顔絵チャンネル」 「街へいこうよ どうぶつの森」「Wiiスピークチャンネル」「スーパーマリオギャラクシー2」 「ゼルダの伝説 スカイウォードソード」「Nintendo
+                    3DS」「マリオカート7」など。
+                    スマートフォン向けゲーム「消滅都市」ではクライアントサイドのメインプログラマー (当時) として事業の成功に貢献。
+                    日本最大のゲーム開発者向けカンファレンスである CEDEC(セデック) 2014、CEDEC 2015、 およびその地方開催であるKYUSHU CEDEC 2015にて登壇。
+                  </p>
+                </div>
+                <div class="plofile__foot">
+                  <ul class="plofile__footList">
+                    <li class="plofile__footItem">
+                      <p class="plofile__footItemName">SNS (個人)</p>
+                      <div class="plofile__footItemBar"></div>
+                      <a href="" class="plofile__footItemSns"><img src="./assets/images/common/facebook.png" alt=""></a>
+                      <a href="" class="plofile__footItemSns"><img src="./assets/images/common/x.png" alt=""></a>
+                    </li>
+                    <li class="plofile__footItem">
+                      <p class="plofile__footItemName">プロフィール</p>
+                      <div class="plofile__footItemBar"></div>
+                      <a href="" class="plofile__footItemCompany"><img src="./assets/images/common/plofile__footItemCompany_1.jpg" alt=""></a>
+                    </li>
+                    <li class="plofile__footItem">
+                      <p class="plofile__footItemName">インタビュー</p>
+                      <div class="plofile__footItemBar"></div>
+                      <a href="" class="plofile__footItemCompany"><img src="./assets/images/common/plofile__footItemCompany_2.jpg" alt=""></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </section>
+
+      <section class="recruit l-recruit">
+        <div class="recruit__inner inner">
+          <div class="recruit__container">
+            <div class="recruit__content">
+              <div class="recruit-sectionTitle sectionTitle">
+                <div class="sectionTitle__subWrap">
+                  <span class="sectionTitle__subBar"></span>
+                  <p class="sectionTitle__sub">recruit</p>
+                </div>
+                <h3 class="sectionTitle__main sectionTitle__main--white">採用情報</h3>
+              </div>
+              <div class="recruit__body">
+                <p class="recruit__lead">
+                  好きな仕事を、もっと楽しく。
+                  つくる人が<br class="u-mobile">主人公になる会社です。
+                </p>
+                <p class="recruit__text">
+                  私たちは一緒に働いてくれる仲間を募集しています。
+                  コンピューターが大好きで壁にぶつかっても乗り越えられるという方、
+                  ぜひ一緒に同じ目標に向かって楽しく仕事をしませんか。
+                </p>
+              </div>
+            </div>
+            <div class="recruit__btn">
+              <div class="btn__wrap">
+                <div class="btn">
+                  <a href="#"></a>
+                </div>
+                <p class="btn__text btn__text--white">会社情報を見る</p>
+              </div>
+            </div>
+          </div>
+          <ul class="recruit__imgList">
+            <li class="recruit__imgItem recruit__imgItem-01">
+              <img src="./assets/images/common/recruit_01.webp" alt="">
+            </li>
+            <div class="recruit__imgItemWrap">
+              <li class="recruit__imgItem recruit__imgItem-02">
+                <img src="./assets/images/common/business_kv.jpg" alt="">
+              </li>
+              <li class="recruit__imgItem recruit__imgItem-03">
+                <img src="./assets/images/common/recruit_03.webp" alt="">
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact l-contact">
+        <div class="contact__inner inner">
+          <div class="contact__container">
+            <div class="contact__sectionTItleWrap">
+              <div class="contact__sectionTitle sectionTitle">
+                <div class="sectionTitle__subWrap">
+                  <span class="sectionTitle__subBar"></span>
+                  <p class="sectionTitle__sub">contact&nbsp;us</p>
+                </div>
+                <h3 class="sectionTitle__main">お問い合わせ</h3>
+              </div>
+            </div>
+            <div class="contact__body">
+              <p class="contact__text">
+                アプリ、システム開発に開するご質問やご相談など<br class="u-desktop">お気軽にお問い合わせください。
+              </p>
+            </div>
+            <div class="contact__btn">
+              <a href="#"><span></span>お問い合わせフォーム</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__inner inner">
+        <div class="footer__container">
+          <div class="footer__body">
+            <nav class="footer__nav">
+              <ul class="footer__navList">
+                <li class="footer__navItem footer__navItem--borderTop">
+                  <a class="footer__navItemTitle" href="sub_message.html">会社情報</a>
+                  <a class="footer__navItemText" href="#">代表挨拶</a>
+                  <a class="footer__navItemText footer__navItemText--nowrap" href="#">会社概要・沿革</a>
+                  <a class="footer__navItemText" href="#">アクセス</a>
+                </li>
+              </ul>
+              <ul class="footer__navList">
+                <li class="footer__navItem">
+                  <a class="footer__navItemTitle" href="#">お知らせ</a>
+                </li>
+                <li class="footer__navItem">
+                  <a class="footer__navItemTitle" href="#">受託開発事業について</a>
+                </li>
+                <li class="footer__navItem">
+                  <a class="footer__navItemTitle" href="#">実績紹介</a>
+                </li>
+                <li class="footer__navItem">
+                  <a class="footer__navItemTitle" href="#">お問い合わせ</a>
+                </li>
+                <li class="footer__navItem">
+                  <a class="footer__navItemTitle" href="#">採用情報</a>
+                </li>
+              </ul>
+              <ul class="footer__navList footer__navList--others">
+                <li class="footer__navItem footer__navItem--other">
+                  <a class="footer__navItemText" href="#">プレスキット</a>
+                </li>
+                <li class="footer__navItem footer__navItem--other">
+                  <a class="footer__navItemText" href="#">個人情報保護方針</a>
+                </li>
+                <li class="footer__navItem footer__navItem--other">
+                  <a class="footer__navItemText" href="#">情報セキュリティーポリシー</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__logoImg">
+            <img src="./assets/images/common/logo02s.png" alt="">
+          </div>
+        </div>
+        <div class="footer__foot">
+          <div class="footer__footContainer">
+            <div class="footer__infoWrap">
+              <div class="footer__info">
+                <div class="footer__titleImg">
+                  <img src="/assets/images/common/logo03.png" alt="">
+                </div>
+                <div class="footer__access">
+                  <p>〒690-0061 島根県松江市白潟本町13番地4<br>大樹生命松江ビル2階</p>
+                </div>
+              </div>
+              <div class="footer__facebook">
+                <a href="#"><img src="./assets/images/common/f_logo_RGB-Black_144.png" alt=""></a>
+              </div>
+            </div>
+            <div class="footer__bar"></div>
+            <div class="footer__company">
+              <img src="./assets/images/common/footer__company.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <small class="footer__copyright">&copy;epsilon&nbsp;software&nbsp;inc.</small>
+    </footer>
+
+  </div>
+</body>
+
+
+
+<!----- 共通パーツ ----->
+
+<!-- <div class="btn__wrap">
+  <div class="btn">
+    <a href="#"></a>
+  </div>
+  <p class="btn__text">もっと見る</p>
+</div>
+
+
+<div class="sectionTitle">
+  <div class="sectionTitle__subWrap">
+    <span class="sectionTitle__subBar"></span>
+    <p class="sectionTitle__sub">Company info</p>
+  </div>
+  <h3 class="sectionTitle__main">お知らせ</h3>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+</html>

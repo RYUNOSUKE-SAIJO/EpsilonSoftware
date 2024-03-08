@@ -3,7 +3,7 @@
 
 .header {
     height: 65px;
-    background-color: #F2F5F7;
+    background-color: transparent;
     @include mq("md") {
         height: 92px;
     }
@@ -97,7 +97,7 @@
 .header__navItem.header__navItem--facebook span {
     width: 26px;
     height: 26px;
-    background: url(../images/common/f_logo_RGB-Black_144.png) no-repeat center center / cover;
+    background: url(../images/common/facebook.png) no-repeat center center / cover;
 }
 
 .header__navItem.header__navItem--contact {
