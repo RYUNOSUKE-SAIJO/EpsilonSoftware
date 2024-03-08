@@ -67,10 +67,14 @@
     color: #000;
     text-transform: uppercase;
     white-space: nowrap;
+    @include mq('md') {
+        font-size: 10px;
+    }
     @include mq('lg') {
         padding: 0 1vw;
         font-size: 14px;
     }
+
 }
 
 .header__navItem.header__navItem--plus {

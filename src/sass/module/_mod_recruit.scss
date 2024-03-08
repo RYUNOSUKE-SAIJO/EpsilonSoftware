@@ -8,16 +8,18 @@
 .recruit__inner {
   padding-top: 110px;
   @include mq('md') {
-    padding-top: 140px;
+    padding-top: 90px;
     display: flex;
-    gap: 10%;
+    gap: 6%;
   }
 }
 
 .recruit__container {
   padding-bottom: 100px;
   @include mq('md') {
-    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 47%;
+    margin: auto 0;
   }
 }
 
@@ -64,7 +66,8 @@
     margin: 0 calc(50% - 50vw);
     width: 100vw;
     @include mq('md') {
-      margin: 0;
+      margin:0 auto;
+      width: 47%;
     }
 }
 
@@ -85,13 +88,17 @@ position: relative;
 
 .recruit__imgItem.recruit__imgItem-02 {
 position: absolute;
-top: -60px;
+top: -120px;
 z-index: 2;
 left: 0;
+  @include mq('md') {
+    top: auto;
+    bottom: 70%;
+  }
 }
 
 .recruit__imgItem.recruit__imgItem-03 {
-margin-top: 90px;
+margin-top: 33%;
 margin-left: auto;
 }
 

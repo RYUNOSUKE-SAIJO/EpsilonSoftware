@@ -19,7 +19,7 @@
   @include mq('md') {
     display: flex;
     flex-direction: row-reverse;
-    gap: 10%;
+    gap: 20px;
   }
 }
 
@@ -64,7 +64,7 @@
   width: 100%;
   @include mq('md') {
     border-bottom: none;
-    padding: 12px 10px;
+    padding: 0px 12px;
   }
 }
 
@@ -83,6 +83,7 @@
     color: #000;
     font-family: $main-font;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .footer__navItemTitle::before {
@@ -104,6 +105,10 @@
     font-weight: 400;
 }
 
+.footer__navItemText.footer__navItemText--nowrap {
+    white-space: nowrap;
+}
+
 
 // footer__navList--others //
 
@@ -118,6 +123,9 @@
 .footer__navItem.footer__navItem--other {
   border-bottom: none;
   padding: 12px 10px;
+  @include mq('md') {
+    padding: 0px 0px;
+  }
 }
 
 .footer__navItemOther {
@@ -135,8 +143,6 @@
     background-color: transparent;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
   }
 }
 
