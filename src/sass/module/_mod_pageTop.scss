@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.pageTop {
+    padding: 52px 5px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    line-height: 1;
+    color: $main-color;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid $main-color;
+    cursor: pointer;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-transform: capitalize;
+}
+
+.pageTop::before {
+    border-right: 2px solid #00AEBB;
+    border-top: 2px solid #00AEBB;
+    content: "";
+    height: 12px;
+    margin: auto;
+    position: absolute;
+    right: 7px;
+    top: 18px;
+    transform: rotate(313deg);
+    transition: all 0.5s;
+    width: 12px;
+}
+
+.pageTop::after {
+    border-right: 2px solid #00AEBB;
+    border-top: 2px solid #00AEBB;
+    content: "";
+    height: 25px;
+    left: 16px;
+    margin: auto;
+    position: absolute;
+    top: 19.5px;
+    transition: all 0.5s;
+    width: 0px;
+}
+
+// .pageTop::before {
+//     content: "";
+//     position: absolute;
+//     top: prem(20);
+//     left: 50%;
+//     width: prem(13);
+//     height: prem(13);
+//     border-top: prem(3) solid #fff;
+//     border-right: prem(3) solid #fff;
+//     transform: translateX(-50%) rotate(-45deg);
+// }

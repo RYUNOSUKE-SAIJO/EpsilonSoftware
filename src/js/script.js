@@ -1,6 +1,5 @@
 
 jQuery(function ($) {
-
   /* ===============================================
   # メインビュー スワイパー
   =============================================== */
@@ -26,7 +25,6 @@ jQuery(function ($) {
       },
     },
   });
-
 
   /* ===============================================
   # ドロワーメニュー
@@ -68,8 +66,52 @@ jQuery(function ($) {
     }
   });
 
+  /* ===============================================
+  # トップへ戻るボタン
+  =============================================== */
+  $(window).on("scroll", function () {
+    let scrollHeight = $(document).height();
+    let scrollPosition = $(window).height() + $(window).scrollTop();
+    let footHeight = $("footer").innerHeight();
+    if (scrollHeight - scrollPosition <= footHeight) {
+      if(window.matchMedia("(max-width: 768px)").matches){
+        $(".js-pageTop").css({
+          position: "fixed",
+          bottom: "6vh",
+        });
+      }else{
+        $(".js-pageTop").css({
+        position: "absolute",
+        bottom: footHeight - 100,
+      });
+      }
+    } else {
+      $(".js-pageTop").css({
+        position: "fixed",
+        bottom: "6vh",
+      });
+    }
+  });
 
+  $(".js-pageTop").on("click", function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
 
+  let topBtn = $(".js-pageTop");
+  topBtn.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      topBtn.fadeIn();
+    } else {
+      topBtn.fadeOut();
+    }
+  });
 
 
 
