@@ -5,6 +5,7 @@
     height: 100vh;
     min-height: 710px;
     background-color: #F2F5F7;
+    overflow: hidden;
 }
 
 .mv__inner {
@@ -15,8 +16,8 @@
 .mv__titleWrap {
     position: absolute;
     z-index: 2;
-    top: 35%;
-    left: 50%;
+    top: 38%;
+    left: 53%;
     transform: translate(-50%,-50%);
     width: 100%;
     color: #fff;
@@ -45,7 +46,7 @@
 .mv__swiper {
     margin-right: calc(50% - 50vw);
     position: absolute;
-    top: 55vh;
+    top: 59vh;
     margin: auto;
     width: 100%;
     @include mq('md') {

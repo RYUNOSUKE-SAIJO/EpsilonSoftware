@@ -25,13 +25,14 @@
 }
 
 .sectionTitle__subBar {
-  position: absolute;
-  background: $main-color;
-  display: inline-block;
-  height: 2px;
-  transform: rotate(120deg);
-  width: 40px;
-  left: -30px;
+    background: #00AEBB;
+    display: inline-block;
+    height: 2px;
+    left: -29px;
+    position: absolute;
+    top: 8px;
+    transform: rotate(120deg);
+    width: 33px;
 }
 
 .sectionTitle__main {
@@ -39,6 +40,8 @@
   font-family: $main-font;
   font-weight: 700;
   color: $black;
+  letter-spacing: -1px;
+
   @include mq('md') {
     font-size: 36px;
   }

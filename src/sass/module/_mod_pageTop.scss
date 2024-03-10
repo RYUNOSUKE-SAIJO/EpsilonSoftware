@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .pageTop {
-    padding: 52px 5px 30px 10px;
+    padding: 50px 4px 20px 7px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     color: $main-color;
     text-transform: uppercase;
@@ -24,14 +24,14 @@
     border-right: 2px solid #00AEBB;
     border-top: 2px solid #00AEBB;
     content: "";
-    height: 12px;
+    height: 11px;
     margin: auto;
     position: absolute;
     right: 7px;
-    top: 18px;
+    top: 21px;
     transform: rotate(313deg);
     transition: all 0.5s;
-    width: 12px;
+    width: 11px;
 }
 
 .pageTop::after {
@@ -39,7 +39,7 @@
     border-top: 2px solid #00AEBB;
     content: "";
     height: 25px;
-    left: 16px;
+    left: 12px;
     margin: auto;
     position: absolute;
     top: 19.5px;

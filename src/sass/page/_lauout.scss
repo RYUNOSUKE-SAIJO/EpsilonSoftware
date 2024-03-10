@@ -8,9 +8,18 @@
     left: 0;
 }
 
+.l-decorationImg_1 {
+    position: absolute;
+    top: 695px;
+    z-index: 2;
+    left: 20%;
+}
+
 .l-companyInfo {
     background-color: #F2F5F7;
-    position: relative;
+    @include mq('md') {
+
+    }
 }
 
 .l-news {
@@ -69,4 +78,9 @@
     position: fixed;
     right: 15px;
     bottom: 15px;
+}
+
+.l-recruitBanner {
+    position: fixed;
+    bottom: 0;
 }

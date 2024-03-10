@@ -77,7 +77,7 @@ jQuery(function ($) {
       if(window.matchMedia("(max-width: 768px)").matches){
         $(".js-pageTop").css({
           position: "fixed",
-          bottom: "6vh",
+          bottom: "10vh",
         });
       }else{
         $(".js-pageTop").css({
@@ -88,7 +88,7 @@ jQuery(function ($) {
     } else {
       $(".js-pageTop").css({
         position: "fixed",
-        bottom: "6vh",
+        bottom: "10vh",
       });
     }
   });

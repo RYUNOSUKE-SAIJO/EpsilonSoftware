@@ -1,0 +1,13 @@
+@use "global" as *;
+
+// あしらい //
+
+.decorationImg_1 {
+  max-width: 61%;
+}
+
+.decorationImg_1 img {
+  aspect-ratio: 200 / 200;
+  height: auto;
+  object-fit: cover;
+}
