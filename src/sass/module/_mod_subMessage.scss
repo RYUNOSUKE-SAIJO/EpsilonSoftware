@@ -1,4 +1,177 @@
 @use "global" as *;
 
+.message {
+
+}
+
+.message__inner {
+  @include mq('md') {
+      display: flex;
+      gap: 5%;
+  }
+}
+
+.message__contentContainer {
+  @include mq('md') {
+      display: flex;
+      gap: 8%;
+  }
+}
+
+
+// 代表取締役 //
+
+.message__presidentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include mq('md') {
+    width: 100%;
+    min-width: 150px;
+    justify-content: start;
+  }
+}
+
+.message__presidentImg {
+  height: auto;
+  aspect-ratio: 236 / 336;
+  object-fit: cover;
+  max-width: 236px;
+  width: 100%;
+  @include mq('md') {
+    aspect-ratio: 250 / 356;
+    max-width: 250px;
+  }
+}
+
+.message__presidentNameWrap {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.message__presidentPost {
+  font-size: 16px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+.message__presidentName {
+  font-size: 22px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 700;
+}
+
+
+// 本文 //
+
+.message__content {
+  margin-top: 60px;
+  @include mq('md') {
+    margin-top: 0;
+  }
+}
+
+.messageTitle {
+  font-size: 30px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 700;
+  line-height: calc(46 / 30);
+  @include mq('md') {
+    font-size: 32px;
+    line-height: calc(48 / 32);
+  }
+}
+
+.message__body {
+  margin-top: 24px;
+  @include mq('md') {
+    margin-top: 40px;
+  }
+}
+
+.message__text {
+  font-size: 15px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 400;
+  line-height: calc(28 / 15);
+}
+
+.message__text.message__text--right {
+  margin-top: 16px;
+  text-align: right;
+  @include mq('md') {
+    margin-top: 20px;
+  }
+}
+
+.message__plofile {
+  margin-top: 80px;
+  @include mq('md') {
+    margin-top: 110px;
+  }
+}
+
+
+// メッセージナビ //
+
+.message__nav {
+  margin-top: 70px;
+  @include mq('md') {
+    margin-top: 0;
+  }
+}
+
+.message__navContainer {
+
+}
+
+.message__navList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.message__navItem {
+  padding: 20px 40px;
+  background-color: #F2F5F7;
+}
+
+.message__navItem:nth-of-type(1) {
+  background-color: #233943;
+  position: relative;
+}
+
+.message__navItem:nth-of-type(1)::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: $main-color;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.message__navItem:nth-of-type(2) {
+  background-color: #00AEBB;
+}
+
+.message__navItemText {
+  font-size: 15px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.message__navItemText.message__navItemText--white {
+  color: #fff;
+}
+
 
 

@@ -40,6 +40,32 @@
   transform: translate(-50%, -50%);
   z-index: 100;
   @include mq('md') {
-    top: 59%;
+    top: 80%;
+    left: 20%;
   }
+}
+
+.subMv__recruitBanner {
+  display: none;
+  @include mq('md') {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 100vh;
+      width: 100%;
+      top: 32vh;
+      right: 0;
+      width: auto;
+  }
+}
+
+.subMv__recruitBanner a picture img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: cover;
+    width: 100%;
+    @include mq('md') {
+        max-width: 70px;
+        aspect-ratio: 70/210;
+    }
 }

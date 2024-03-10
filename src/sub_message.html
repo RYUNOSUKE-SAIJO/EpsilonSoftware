@@ -46,30 +46,30 @@
       <div class="header__inner">
         <h1 class="header__logo">
           <a href="#">
-            <img src="./assets/images/common/logo02.png" alt="会社ロゴ">
+            <img src="./assets/images/common/header-logo2.png" alt="会社ロゴ">
           </a>
         </h1>
         <nav class="header__nav">
           <ul class="header__navItems">
-            <li class="header__navItem header__navItem--plus">
+            <li class="header__navItem header__navItem--white header__navItem--plus">
               <a href="#">会社情報&nbsp;<span></span></a>
             </li>
-            <li class="header__navItem">
+            <li class="header__navItem header__navItem--white">
               <a href="#">お知らせ</a>
             </li>
-            <li class="header__navItem">
+            <li class="header__navItem header__navItem--white">
               <a href="#">受託開発事業について</a>
             </li>
-            <li class="header__navItem">
+            <li class="header__navItem header__navItem--white">
               <a href="#">実績紹介</a>
             </li>
-            <li class="header__navItem">
+            <li class="header__navItem header__navItem--white">
               <a href="#">採用情報</a>
             </li>
             <li class="header__navItem header__navItem--facebook">
               <a href="#"><span></span></a>
             </li>
-            <li class="header__navItem header__navItem--contact">
+            <li class="header__navItem header__navItem--white header__navItem--contact">
               <a href="#"><span></span>お問い合わせ</a>
             </li>
           </ul>
@@ -89,7 +89,7 @@
                 <a href="#">お知らせ</a>
               </li>
               <li class="header__drawerItem">
-                <a href="#">受託開発事業<br class="u-tab">について</a>
+                <a href="#">受託開発事業について</a>
               </li>
               <li class="header__drawerItem">
                 <a href="#">実績紹介</a>
@@ -115,7 +115,7 @@
         <div class="subMv__inner">
           <picture class="subMv__img">
             <source srcset="./assets/images/common/subMessage_mv.jpg" media="(max-width: 768px)" />
-            <img src="./assets/images/common/subMessage_mv.jpg" alt="黄色の熱帯魚" />
+            <img src="./assets/images/common/subMessage_mv.jpg" alt="メインビュー画像" />
           </picture>
           <div class="subMv__sectionTitle sectionTitle">
             <div class="sectionTitle__subWrap">
@@ -123,6 +123,14 @@
               <p class="sectionTitle__sub">message</p>
             </div>
             <h3 class="sectionTitle__main sectionTitle__main--white">代表挨拶</h3>
+          </div>
+          <div class="subMv__recruitBanner">
+            <a href="#">
+              <picture>
+                <source srcset="./assets/images/common/recruit_banner_02.svg" media="(max-width: 767px)">
+                <img src="./assets/images/common/recruit_banner.svg" alt="採用情報バナー">
+              </picture>
+            </a>
           </div>
         </div>
       </section>
@@ -136,38 +144,42 @@
         </div>
       </div>
 
-      <!-- <div class="recruitBanner">
-        <a href="#">
-          <picture>
-            <source srcset="./assets/images/common/recruit_banner_02.svg" media="(max-width: 600px)">
-            <img src="./assets/images/common/recruit_banner.svg" alt="採用情報バナー">
-          </picture>
-        </a>
-      </div> -->
-
       <section class="message l-message">
         <div class="message__inner inner">
           <!----- 全体横並び ----->
           <div class="message__container">
-            <!----- 写真 ----->
-            <div class="message__presidentImgWrap">
-              <div class="message__presidentImg">
-                <img src="./assets/images/common/president_photo.jpg" alt="代表取締役社長の写真">
+            <div class="message__contentContainer">
+              <!----- 写真 ----->
+              <div class="message__presidentContainer">
+                <div class="message__presidentImg">
+                  <img src="./assets/images/common/president_photo.jpg" alt="代表取締役社長の写真">
+                </div>
+                <div class="message__presidentNameWrap">
+                  <p class="message__presidentPost">代表取締役社長</p>
+                  <p class="message__presidentName">渡部&nbsp;晋司</p>
+                </div>
               </div>
-              <p class="message__presidentPost">代表取締役社長</p>
-              <p class="message__presidentName">渡部&nbsp;晋司</p>
-            </div>
-            <div class="message__content">
-              <h3 class="messageTitle">コンピューターで広がる<br>もっとワクワクな<br class="u-tab">毎日を</h3>
-              <div class="message__body">
-                <p class="message__text">
-                  株式会社 イプシロンソフトウェアは、島根県松江市に本拠地を置く企業です。 ゲームの開発や各種ソフトウェアの受託開発を行う目的で、2016年6月に設立されました。
-                </p>
-                <p class="message__text">
-                  ビデオゲームが誕生してから多くの時間が経ち、多くの人が様々なゲームを楽しむようになりました。 そしてそれは幅広い年代の方や性別を超え、今やゲームをプレイするということは多くの方がごく自然に体験するものとなりました。
-                  ゲームを楽しみ、クリアしたときの達成感や喜びを世界中の多くの方々に新しい体験として提供したい。 そしてその体験が長い年月が経ったあとで思い出として記憶に残るような作品となるようにしたい。 それこそが我々が目指すことです。
-                </p>
-                <p class="message__text"><a href="">(写真提供 : 山陰中央新報社)</a></p>
+              <div class="recruitBanner">
+                <a href="#">
+                  <picture>
+                    <source srcset="./assets/images/common/recruit_banner_02.svg" media="(max-width: 768px)">
+                    <img src="./assets/images/common/recruit_banner.svg" alt="採用情報バナー">
+                  </picture>
+                </a>
+              </div>
+              <!----- 本文 ----->
+              <div class="message__content">
+                <h3 class="messageTitle">コンピューターで広がる<br>もっとワクワクな<br class="u-tab">毎日を</h3>
+                <div class="message__body">
+                  <p class="message__text">
+                    株式会社 イプシロンソフトウェアは、島根県松江市に本拠地を置く企業です。 ゲームの開発や各種ソフトウェアの受託開発を行う目的で、2016年6月に設立されました。
+                  </p>
+                  <p class="message__text">
+                    ビデオゲームが誕生してから多くの時間が経ち、多くの人が様々なゲームを楽しむようになりました。 そしてそれは幅広い年代の方や性別を超え、今やゲームをプレイするということは多くの方がごく自然に体験するものとなりました。
+                    ゲームを楽しみ、クリアしたときの達成感や喜びを世界中の多くの方々に新しい体験として提供したい。 そしてその体験が長い年月が経ったあとで思い出として記憶に残るような作品となるようにしたい。 それこそが我々が目指すことです。
+                  </p>
+                  <p class="message__text message__text--right">(写真提供:<span class="textBlue">山陰中央新報社</span>)</p><span class="textBlue"></span>
+                </div>
               </div>
             </div>
             <div class="message__plofile plofile">
@@ -176,28 +188,30 @@
                 <div class="plofile__bar"></div>
                 <div class="plofile__body">
                   <p class="plofile__text">
-                    1984年 島根県松江市出身。
-                    島根大学教育学部附属中学校 (現：島根大学教育学部附属義務教育学校後期課程)、松江北高校、会津大学 コンピュータ理工学部 コンピュータソフトウェア学科 (現：コンピュータ理工学科) 卒。 コンピューターサイエンスを Minyi Guo
-                    (現：IEEEフェロー、上海交通大学主任教授) に師事し、グリッド・コンピューティングに関する研究をオリンパス株式会社と産学連携で実施。
-                    卒業後は 任天堂株式会社に入社し、家庭用ゲーム機向けソフトウェア、ゲーム開発用のツール、SDK(ソフトウェア開発キット) の開発に携わる。
-                    2012年よりグリー株式会社に入社。ソーシャルゲームプラットフォーム事業に従事。
-                    2013年より同社のリードエンジニアに就任し、スマートフォン向けゲームの開発に携わる。
-                    2016年に独立し、株式会社 イプシロンソフトウェアを設立、代表取締役社長に就任。
+                    1984年 島根県松江市出身。<br>
+                    島根大学教育学部附属中学校 (現：<span class="textBlue">島根大学教育学部附属義務教育学校後期課程</span>)、<span class="textBlue">松江北高校</span>、<span class="textBlue">会津大学</span>コンピュータ理工学部 コンピュータソフトウェア学科 (現：コンピュータ理工学科) 卒。 コンピューターサイエンスを Minyi Guo
+                    (現：IEEEフェロー、<span class="textBlue">上海交通大学</span>主任教授) に師事し、グリッド・コンピューティングに関する研究をオリンパス株式会社と産学連携で実施。<br>
+                    卒業後は<span class="textBlue">任天堂株式会社</span>に入社し、家庭用ゲーム機向けソフトウェア、ゲーム開発用のツール、SDK(ソフトウェア開発キット) の開発に携わる。<br>
+                    2012年より<span class="textBlue">グリー株式会社</span>に入社。ソーシャルゲームプラットフォーム事業に従事。<br>
+                    2013年より同社のリードエンジニアに就任し、スマートフォン向けゲームの開発に携わる。<br>
+                    2016年に独立し、株式会社 イプシロンソフトウェアを設立、代表取締役社長に就任。<br>
                   </p>
                   <p class="plofile__text">
-                    開発に携わった製品として、「Wii ショッピングチャンネル」「似顔絵チャンネル」 「街へいこうよ どうぶつの森」「Wiiスピークチャンネル」「スーパーマリオギャラクシー2」 「ゼルダの伝説 スカイウォードソード」「Nintendo
-                    3DS」「マリオカート7」など。
-                    スマートフォン向けゲーム「消滅都市」ではクライアントサイドのメインプログラマー (当時) として事業の成功に貢献。
-                    日本最大のゲーム開発者向けカンファレンスである CEDEC(セデック) 2014、CEDEC 2015、 およびその地方開催であるKYUSHU CEDEC 2015にて登壇。
+                    開発に携わった製品として、「<span class="textBlue">Wii&nbsp;ショッピングチャンネル</span>」「<span class="textBlue">似顔絵チャンネル」</span> 「<span class="textBlue">街へいこうよ&nbsp;どうぶつの森&nbsp;</span>」「<span class="textBlue">Wiiスピークチャンネル</span>」「<span class="textBlue">スーパーマリオギャラクシー2</span>」「<span class="textBlue"></span>ゼルダの伝説&nbsp;スカイウォードソード」
+                    「<span class="textBlue">Nintendo&nbsp;3DS</span>」「<span class="textBlue">マリオカート7</span>」など。<br>
+                    スマートフォン向けゲーム「<span class="textBlue">消滅都市</span>」ではクライアントサイドのメインプログラマー (当時) として事業の成功に貢献。<br>
+                    日本最大のゲーム開発者向けカンファレンスである&nbsp;<span class="textBlue">CEDEC(セデック)2014</span>、<span class="textBlue">CEDEC&nbsp;2015</span>、およびその地方開催である<span class="textBlue">KYUSHU&nbsp;CEDEC 2015</span>にて登壇。
                   </p>
                 </div>
                 <div class="plofile__foot">
                   <ul class="plofile__footList">
                     <li class="plofile__footItem">
                       <p class="plofile__footItemName">SNS (個人)</p>
-                      <div class="plofile__footItemBar"></div>
-                      <a href="" class="plofile__footItemSns"><img src="./assets/images/common/facebook.png" alt=""></a>
-                      <a href="" class="plofile__footItemSns"><img src="./assets/images/common/x.png" alt=""></a>
+                      <div class="plofile__footItemBar plofile__footItemBar--long"></div>
+                      <div class="plofile__footItemSnsBox">
+                        <a href="" class="plofile__footItemSns"><img src="./assets/images/common/x.png" alt=""></a>
+                        <a href="" class="plofile__footItemSns"><img src="./assets/images/common/facebook.png" alt=""></a>
+                      </div>
                     </li>
                     <li class="plofile__footItem">
                       <p class="plofile__footItemName">プロフィール</p>
@@ -213,9 +227,26 @@
                 </div>
               </div>
             </div>
-
           </div>
-
+          <aside class="message__nav">
+            <div class="message__navContainer">
+              <ul class="message__navList">
+                <li class="message__navItem">
+                  <a class="message__navItemText message__navItemText--white" href="sub_message.html">会社情報</a>
+                </li>
+                <li class="message__navItem">
+                  <a class="message__navItemText message__navItemText--white" href="sub_message.html">代表挨拶</a>
+                </li>
+                <li class="message__navItem">
+                  <a class="message__navItemText" href="#">会社概要・沿革</a>
+                </li>
+                <li class="message__navItem">
+                  <a class="message__navItemText" href="#">アクセス</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
       </section>
 
       <section class="recruit l-recruit">
@@ -289,6 +320,9 @@
           </div>
         </div>
       </section>
+
+      <div class="l-page-top page-top js-page-top">page&nbsp;top</div>
+
     </main>
 
     <footer>
@@ -362,6 +396,7 @@
       </div>
       <small class="footer__copyright">&copy;epsilon&nbsp;software&nbsp;inc.</small>
     </footer>
+
 
   </div>
 </body>

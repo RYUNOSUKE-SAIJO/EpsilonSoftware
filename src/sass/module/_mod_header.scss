@@ -121,6 +121,10 @@
     background: url(../images/common/mail_icon.svg) no-repeat center center / cover;
 }
 
+.header__navItem.header__navItem--white a {
+    color: #fff;
+}
+
 
 /* ===============================================
 # ハンバーガーメニュー
@@ -182,8 +186,10 @@
 }
 
 .headerHamburger.is-open span:nth-of-type(3) {
-    top: prem(-2);
     transform: translateX(-50%) rotate(-45deg);
+    width: 23px;
+    left: 18px;
+    top: -4px;
 }
 
 /* ===============================================
@@ -191,7 +197,7 @@
 =============================================== */
 
 .header__drawer {
-    padding: prem(228) 0;
+    padding: 228px 0;
     display: none;
     position: absolute;
     z-index: 900;
@@ -201,7 +207,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba($color: #623A14, $alpha: .95);
+    background-color: rgba($color: $main-color, $alpha: .95);
     overflow-y: scroll;
     scrollbar-width: none;
 }
@@ -211,9 +217,9 @@
 }
 
 .header__drawerItem a {
-    padding: prem(15) 0;
+    padding: 20px 0;
     display: block;
-    font-size: prem(36);
+    font-size: 24px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.05em;
@@ -222,15 +228,36 @@
     text-transform: uppercase;
 }
 
-.header__drawerItem.header__drawerItem--contact a::after {
-    content: "";
-    margin-bottom: prem(5);
-    margin-left: prem(20);
-    width: prem(15);
-    height: prem(15);
-    display: inline-block;
-    background-image: url(./../images/common/contact-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.header__drawerItem.header__drawerItem--facebook a {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background: url(../images/common/facebook.png) no-repeat center center / cover;
 }
+
+.header__drawerItem.header__drawerItem--contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__drawerItem.header__drawerItem--contact span {
+    display: inline-block;
+    margin-right: 9px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/common/mail_icon.svg) no-repeat center center / cover;
+}
+
+// .header__drawerItem.header__drawerItem--contact a::after {
+//     content: "";
+//     margin-bottom: 5px;
+//     margin-left: 20px;
+//     width: 15px;
+//     height: 15px;
+//     display: inline-block;
+//     background-image: url(./../images/common/contact-icon.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: contain;
+// }

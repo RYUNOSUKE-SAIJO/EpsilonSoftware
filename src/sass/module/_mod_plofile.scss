@@ -1,1 +1,94 @@
 @use "global" as *;
+
+.plofile {
+
+}
+
+.plofile__container {
+
+}
+
+.plofile__title {
+  font-size: 26px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 700;
+  @include mq('md') {
+    font-size: 28px;
+  }
+}
+
+.plofile__bar {
+  margin-top: 20px;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, $main-color 0%, $main-color 7%, #C7C7C7 7%, #C7C7C7 100%,);
+}
+
+.plofile__body {
+  margin-top: 20px;
+}
+
+.plofile__text {
+
+}
+
+.plofile__foot {
+  margin-top: 60px;
+}
+
+.plofile__footList {
+
+}
+
+.plofile__footItem {
+  display: flex;
+  max-width: 274px;
+  margin-top: 20px;
+}
+
+.plofile__footItem:first-of-type {
+  display: flex;
+  max-width: 220px;
+  margin-top: none;
+}
+
+.plofile__footItemName {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+.plofile__footItemBar {
+  margin: auto;
+  height: 1px;
+  width: 20px;
+  background-color: #C7C7C7;
+}
+
+.plofile__footItemBar.plofile__footItemBar--long {
+  width: 35px;
+}
+
+.plofile__footItemSnsBox {
+  display: flex;
+  gap: 20px;
+}
+
+.plofile__footItemSns {
+  height: auto;
+  aspect-ratio: 30 / 30;
+  object-fit: cover;
+  max-width: 30px;
+}
+
+.plofile__footItemCompany {
+  height: auto;
+  aspect-ratio: 144 / 44;
+  object-fit: cover;
+  max-width: 144px;
+}
+
