@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.message {
-
-}
-
 .message__inner {
   @include mq('md') {
       display: flex;
@@ -132,10 +128,6 @@
     max-width: 217px;
     width: 100%;
   }
-}
-
-.message__navContainer {
-
 }
 
 .message__navList {

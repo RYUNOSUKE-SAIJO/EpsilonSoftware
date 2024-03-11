@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.ourBusiness {
-
-}
-
-
 .ourBusiness__inner {
   padding-bottom: 70px;
   @include mq('md') {
@@ -45,10 +40,6 @@
   @include mq('md') {
     aspect-ratio: 365 / 352;
   }
-}
-
-.ourBusiness-sectionTitle {
-
 }
 
 .ourBusiness__bodyWrap {

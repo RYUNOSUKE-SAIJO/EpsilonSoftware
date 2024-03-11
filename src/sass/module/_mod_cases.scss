@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.cases {
-
-}
-
 .cases__inner.inner {
   @include mq('md') {
     display: flex;
@@ -51,10 +47,6 @@
   max-width: 186px;
 }
 
-.cases__content {
-
-}
-
 .cases__header {
   align-items: end;
   display: flex;
@@ -65,7 +57,7 @@
   }
 }
 
-.cases-sectionTitle {
+.cases__sectionTitle {
   flex-shrink: 0;
 }
 

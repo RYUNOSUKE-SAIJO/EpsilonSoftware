@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.recruit {
-
-}
-
-
 .recruit__inner.inner {
   padding-top: 76px;
   @include mq('md') {
@@ -24,10 +19,6 @@
     width: 47%;
     margin: auto 0;
   }
-}
-
-.recruit-sectionTitle {
-
 }
 
 .recruit__body {
@@ -85,11 +76,11 @@ position: relative;
   }
 }
 
-.recruit__imgItem.recruit__imgItem-01 {
+.recruit__imgItem.recruit__imgItem--01 {
   width: 100%;
 }
 
-.recruit__imgItem.recruit__imgItem-02 {
+.recruit__imgItem.recruit__imgItem--02 {
 position: absolute;
 top: -66px;
 z-index: 2;
@@ -100,7 +91,7 @@ left: 0;
   }
 }
 
-.recruit__imgItem.recruit__imgItem-03 {
+.recruit__imgItem.recruit__imgItem--03 {
 margin-top: 23%;
 margin-left: auto;
 @include mq('md') {

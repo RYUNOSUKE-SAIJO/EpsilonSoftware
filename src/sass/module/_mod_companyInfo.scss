@@ -24,7 +24,7 @@
   }
 }
 
-.companyInfo-sectionTitle {
+.companyInfo__sectionTitle {
   @include mq('md') {
     flex-shrink: 0;
   }

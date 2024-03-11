@@ -1,5 +1,14 @@
 @use "global" as *;
 
+.btnWrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  z-index: 2;
+}
+
 .btn {
   text-align: center;
 }
@@ -61,15 +70,6 @@
 .btn a:hover::after {
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
-}
-
-.btn__wrap {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: end;
-  position: relative;
-  z-index: 2;
 }
 
 .btn__text {

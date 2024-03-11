@@ -1,18 +1,11 @@
 @use "global" as *;
 
-.news {
-
-}
-
 .news__inner {
   @include mq('md') {
     max-width: 792px;
   }
 }
 
-.news-sectionTitle {
-
-}
 
 .news__top {
   @include mq('md') {
@@ -60,10 +53,6 @@
 
 
 // ポスト //
-
-.news__postList {
-
-}
 
 .news__postItem {
   border-bottom: 1px solid #E5E5E5;
