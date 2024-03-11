@@ -83,7 +83,10 @@
 .l-pageTop {
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 80px;
+    @include mq('md') {
+        bottom: 15px;
+    }
 }
 
 .l-recruitBanner {

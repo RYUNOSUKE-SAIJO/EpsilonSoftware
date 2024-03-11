@@ -69,29 +69,32 @@ jQuery(function ($) {
   /* ===============================================
   # トップへ戻るボタン
   =============================================== */
-  $(window).on("scroll", function () {
-    let scrollHeight = $(document).height();
-    let scrollPosition = $(window).height() + $(window).scrollTop();
-    let footHeight = $("footer").innerHeight();
-    if (scrollHeight - scrollPosition <= footHeight) {
-      if (window.matchMedia("(max-width: 768px)").matches) {
-        $(".js-pageTop").css({
-          position: "fixed",
-          bottom: "10vh",
-        });
-      } else {
-        $(".js-pageTop").css({
-          position: "absolute",
-          bottom: footHeight - 100,
-        });
-      }
-    } else {
-      $(".js-pageTop").css({
-        position: "fixed",
-        bottom: "10vh",
-      });
-    }
-  });
+
+  // フッター上で止める //
+
+  // $(window).on("scroll", function () {
+  //   let scrollHeight = $(document).height();
+  //   let scrollPosition = $(window).height() + $(window).scrollTop();
+  //   let footHeight = $("footer").innerHeight();
+  //   if (scrollHeight - scrollPosition <= footHeight) {
+  //     if (window.matchMedia("(max-width: 768px)").matches) {
+  //       $(".js-pageTop").css({
+  //         position: "fixed",
+  //         bottom: "10vh",
+  //       });
+  //     } else {
+  //       $(".js-pageTop").css({
+  //         position: "absolute",
+  //         bottom: footHeight - 100,
+  //       });
+  //     }
+  //   } else {
+  //     $(".js-pageTop").css({
+  //       position: "fixed",
+  //       bottom: "10vh",
+  //     });
+  //   }
+  // });
 
   $(".js-pageTop").on("click", function () {
     $("body,html").animate(
@@ -117,20 +120,30 @@ jQuery(function ($) {
   # recruitBanner
   =============================================== */
 
-  let recruitBanner = $(".js-recruitBanner");
-  recruitBanner.hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
-      recruitBanner.fadeIn();
+    let recruitBanner = $(".js-recruitBanner");
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      recruitBanner.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          recruitBanner.fadeIn();
+        } else {
+          recruitBanner.fadeOut();
+        }
+      });
     } else {
-      recruitBanner.fadeOut();
+      $(window).scroll(function () {
+        $(".js-recruitBanner").css({
+          display: "block",
+        });
+      });
     }
-  });
 
 
 
 
 });
+
+
 
 
 
