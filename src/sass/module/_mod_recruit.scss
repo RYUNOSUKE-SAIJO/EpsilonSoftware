@@ -5,12 +5,15 @@
 }
 
 
-.recruit__inner {
+.recruit__inner.inner {
   padding-top: 76px;
   @include mq('md') {
     padding-top: 90px;
     display: flex;
     gap: 6%;
+    max-width: 1130px;
+    padding-left: 36px;
+    padding-right: 16px;
   }
 }
 
@@ -88,7 +91,7 @@ position: relative;
 
 .recruit__imgItem.recruit__imgItem-02 {
 position: absolute;
-top: -120px;
+top: -66px;
 z-index: 2;
 left: 0;
   @include mq('md') {
@@ -98,8 +101,11 @@ left: 0;
 }
 
 .recruit__imgItem.recruit__imgItem-03 {
-margin-top: 33%;
+margin-top: 23%;
 margin-left: auto;
+@include mq('md') {
+  margin-top: 38%;
+}
 }
 
 .recruit__imgItem img {

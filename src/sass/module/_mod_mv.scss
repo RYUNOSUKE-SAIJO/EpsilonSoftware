@@ -23,8 +23,9 @@
     color: #fff;
     text-align: center;
     @include mq(md){
-        left: calc(50% - min(50vw, #{550px}));
-        transform: translateY(-50%);
+        left: calc(52% - min(50vw, 550px));
+        transform: translateY(-68%);
+        width: auto;
         width: initial;
     }
 }

@@ -9,10 +9,16 @@
 }
 
 .l-decorationImg_1 {
-    position: absolute;
-    top: 695px;
-    z-index: 2;
     left: 20%;
+    position: absolute;
+    top: 716px;
+    z-index: 2;
+    @include mq('md') {
+        left: 14%;
+        position: absolute;
+        top: 1098px;
+        z-index: 2;
+    }
 }
 
 .l-companyInfo {
@@ -51,19 +57,19 @@
     background-color: #233943;
     margin-top: 70px;
     @include mq('md') {
-        margin-top: 160px;
-        padding-bottom: 100px;
+        margin-top: 36px;
+        padding-bottom: 75px;
         background: linear-gradient(180deg, #fff 0%, #fff 7%, #233943 7%, #233943 93%, #fff 93%, #fff 100%);
     }
     @include mq('lg') {
-        background: linear-gradient(180deg, #fff 0%, #fff 15%, #233943 15%, #233943 85%, #fff 85%, #fff 100%);
+        background: linear-gradient(180deg, #fff 0%, #fff 15%, #233943 15%, #233943 88%, #fff 88%, #fff 100%);
     }
 }
 
 .l-contact {
-    margin-top: 100px;
+    margin-top: 74px;
     @include mq('md') {
-        margin-top: 40px;
+        margin-top: 0px;
     }
 }
 
@@ -83,4 +89,10 @@
 .l-recruitBanner {
     position: fixed;
     bottom: 0;
+    z-index: 999;
+    @include mq('md') {
+        position: fixed;
+        bottom: 44vh;
+        right: 0px;
+        }
 }

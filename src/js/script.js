@@ -74,16 +74,16 @@ jQuery(function ($) {
     let scrollPosition = $(window).height() + $(window).scrollTop();
     let footHeight = $("footer").innerHeight();
     if (scrollHeight - scrollPosition <= footHeight) {
-      if(window.matchMedia("(max-width: 768px)").matches){
+      if (window.matchMedia("(max-width: 768px)").matches) {
         $(".js-pageTop").css({
           position: "fixed",
           bottom: "10vh",
         });
-      }else{
+      } else {
         $(".js-pageTop").css({
-        position: "absolute",
-        bottom: footHeight - 100,
-      });
+          position: "absolute",
+          bottom: footHeight - 100,
+        });
       }
     } else {
       $(".js-pageTop").css({
@@ -112,6 +112,21 @@ jQuery(function ($) {
       topBtn.fadeOut();
     }
   });
+
+  /* ===============================================
+  # recruitBanner
+  =============================================== */
+
+  let recruitBanner = $(".js-recruitBanner");
+  recruitBanner.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      recruitBanner.fadeIn();
+    } else {
+      recruitBanner.fadeOut();
+    }
+  });
+
 
 
 

@@ -3,4 +3,25 @@
 .recruitBanner {
   display: block;
 	width: 100vw;
+  @include mq('md') {
+    width: auto;
+  }
+}
+
+.recruitBanner a {
+  @include mq('md') {
+    display: inline-block;
+  }
+}
+
+.recruitBanner a picture img {
+  display: block;
+	width: 100vw;
+  @include mq('md') {
+      height: auto;
+      aspect-ratio: 70 / 210;
+      object-fit: cover;
+      width: 100%;
+      max-width: 70px;
+  }
 }

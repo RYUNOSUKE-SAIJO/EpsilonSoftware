@@ -3,7 +3,10 @@
 // あしらい //
 
 .decorationImg_1 {
-  max-width: 61%;
+  max-width: 225px;
+  @include mq('md') {
+    
+  }
 }
 
 .decorationImg_1 img {

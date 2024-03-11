@@ -4,16 +4,24 @@
 
 }
 
-.cases__inner {
+.cases__inner.inner {
   @include mq('md') {
     display: flex;
     align-items: center;
     gap: 6%;
+    margin-left: auto;
+    padding-left: 20px;
+    max-width: 1280px;
   }
 }
 
 .cases__container {
-
+@include mq('md') {
+    margin-left: auto;
+    margin-top: 10px;
+    width: 71%;
+    padding-right: 56px;
+}
 }
 
 .cases__imgList {
@@ -21,8 +29,11 @@
   gap: calc(100% * (16 / 390));
   margin: 0 calc(50% - 50vw);
 	width: 100vw;
+  justify-content: center;
   @include mq('md') {
-    margin-left: 16px;
+    justify-content: flex-start;
+    margin: 0;
+    width: 100%;
   }
 }
 
