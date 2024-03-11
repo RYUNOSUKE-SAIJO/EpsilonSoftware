@@ -20,6 +20,9 @@
 
 .subMv__img img {
   height: inherit;
+  aspect-ratio: 1280 / 370;
+  object-fit: cover;
+  width: 100%;
 }
 
 .subMv__img::after {
@@ -34,14 +37,20 @@
 }
 
 .subMv__sectionTitle {
-  position: absolute;
-  top: 80%;
   left: 26%;
+  position: absolute;
+  top: 71%;
   transform: translate(-50%, -50%);
   z-index: 100;
   @include mq('md') {
-    top: 80%;
-    left: 20%;
+    left: 17%;
+    top: 73%;
+  }
+}
+
+.subMv__sectionTitle h3 {
+  @include mq('md') {
+    font-size: 54px;
   }
 }
 

@@ -19,18 +19,28 @@
 }
 
 .plofile__bar {
-  margin-top: 20px;
+  margin-top: 16px;
   height: 2px;
   width: 100%;
-  background: linear-gradient(90deg, $main-color 0%, $main-color 7%, #C7C7C7 7%, #C7C7C7 100%,);
+  background: linear-gradient(90deg, $main-color 0%, $main-color 13%, #C7C7C7 13%, #C7C7C7 100%,);
+  @include mq('md') {
+    background: linear-gradient(90deg, $main-color 0%, $main-color 5%, #C7C7C7 5%, #C7C7C7 100%,);
+  }
 }
 
 .plofile__body {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .plofile__text {
-
+  font-size: 15px;
+  color: #000;
+  font-family: $main-font;
+  font-weight: 400;
+  line-height: calc(28 / 15);
+  @include mq('md') {
+    margin-top: 16px;
+  }
 }
 
 .plofile__foot {
@@ -44,13 +54,16 @@
 .plofile__footItem {
   display: flex;
   max-width: 274px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .plofile__footItem:first-of-type {
   display: flex;
-  max-width: 220px;
+  max-width: 206px;
   margin-top: none;
+  @include mq('md') {
+    max-width: 220px;
+  }
 }
 
 .plofile__footItemName {

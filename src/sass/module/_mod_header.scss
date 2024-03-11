@@ -77,22 +77,84 @@
 
 }
 
-.header__navItem.header__navItem--plus {
-    margin-right: 14px;
+
+ // ドロップダウンメニュー //
+.header__navModalWrap {
+    height: inherit;
 }
 
-.header__navItem.header__navItem--plus span {
-	position: relative;
+.header__navItem.header__navItem--contact {
+    margin-left: prem(15);
+    display: flex;
+    align-items: center;
 }
 
-.header__navItem.header__navItem--plus span::before {
-	position: absolute;
-	bottom: -11px;
-	left: 0;
-	content: '\f055';
-	font-family: "Font Awesome 6 Free";
-    color: $main-color;
+.header__navItem > a,
+.header__navModalWrap > p {
+    padding: 0 prem(15);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    font-size: prem(15);
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
 }
+
+.header__navModalWrap > p {
+    transition: .3s;
+}
+
+.header__nav-modal {
+    padding: prem(10) 0;
+    position: fixed;
+    top: prem(80);
+    left: 65%;
+    transform: translateX(-50%) rotateX(90deg);
+    max-width: prem(400);
+    width: 100%;
+    background-color: #E0E5E5;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.header__navModalWrap:hover > .header__nav-modal {
+    transform: translateX(-50%) rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__nav-modal-item a {
+    padding: prem(15) 0 prem(15) prem(50);
+    position: relative;
+    display: block;
+    font-size: prem(15);
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
+}
+
+.header__nav-modal-item a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: prem(40);
+    width: prem(8);
+    height: prem(8);
+    border-top: prem(2) solid #333;
+    border-right: prem(2) solid #333;
+    transform: translateY(-50%) rotate(45deg);
+    transition: .3s;
+}
+
+.header__nav-modal-item a:hover::before {
+    @include mq("md") {
+        opacity: 0.8;
+    }
+}
+
+
 
 .header__navItem.header__navItem--facebook span {
     width: 26px;

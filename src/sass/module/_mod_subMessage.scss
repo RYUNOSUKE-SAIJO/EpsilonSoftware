@@ -27,9 +27,8 @@
   justify-content: center;
   align-items: center;
   @include mq('md') {
-    width: 100%;
-    min-width: 150px;
     justify-content: start;
+    flex-shrink: 0.5;
   }
 }
 
@@ -47,7 +46,10 @@
 
 .message__presidentNameWrap {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 8px;
+  @include mq('md') {
+    margin-top: 18px;
+  }
 }
 
 .message__presidentPost {
@@ -68,7 +70,7 @@
 // 本文 //
 
 .message__content {
-  margin-top: 60px;
+  margin-top: 50px;
   @include mq('md') {
     margin-top: 0;
   }
@@ -80,6 +82,7 @@
   font-family: $main-font;
   font-weight: 700;
   line-height: calc(46 / 30);
+  letter-spacing: -1px;
   @include mq('md') {
     font-size: 32px;
     line-height: calc(48 / 32);
@@ -87,9 +90,9 @@
 }
 
 .message__body {
-  margin-top: 24px;
+  margin-top: 10px;
   @include mq('md') {
-    margin-top: 40px;
+    margin-top: 26px;
   }
 }
 
@@ -98,7 +101,10 @@
   color: #000;
   font-family: $main-font;
   font-weight: 400;
-  line-height: calc(28 / 15);
+  line-height: 1.9;
+  @include mq('md') {
+    margin-top: 12px;
+  }
 }
 
 .message__text.message__text--right {
@@ -110,9 +116,9 @@
 }
 
 .message__plofile {
-  margin-top: 80px;
+  margin-top: 54px;
   @include mq('md') {
-    margin-top: 110px;
+    margin-top: 84px;
   }
 }
 
@@ -123,6 +129,8 @@
   margin-top: 70px;
   @include mq('md') {
     margin-top: 0;
+    max-width: 217px;
+    width: 100%;
   }
 }
 
@@ -139,6 +147,9 @@
 .message__navItem {
   padding: 20px 40px;
   background-color: #F2F5F7;
+  @include mq('md') {
+    padding: 20px 20px 20px 50px;
+  }
 }
 
 .message__navItem:nth-of-type(1) {
@@ -146,29 +157,31 @@
   position: relative;
 }
 
-.message__navItem:nth-of-type(1)::before {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 2px;
-  background-color: $main-color;
-  top: 50%;
-  left: 20px;
-  transform: translate(-50%, -50%);
-}
-
 .message__navItem:nth-of-type(2) {
   background-color: #00AEBB;
 }
 
 .message__navItemText {
+  position: relative;
   font-size: 15px;
   color: #000;
   font-family: $main-font;
   font-weight: 700;
   white-space: nowrap;
 }
+
+.message__navItemText.message__navItemText--first::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: $main-color;
+  top: 52%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+}
+
 .message__navItemText.message__navItemText--white {
   color: #fff;
 }

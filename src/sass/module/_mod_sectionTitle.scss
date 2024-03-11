@@ -40,8 +40,7 @@
   font-family: $main-font;
   font-weight: 700;
   color: $black;
-  letter-spacing: -1px;
-
+  letter-spacing: 1px;
   @include mq('md') {
     font-size: 36px;
   }
