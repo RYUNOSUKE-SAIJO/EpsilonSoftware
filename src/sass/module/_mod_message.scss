@@ -137,11 +137,12 @@
 }
 
 .message__navItem {
-  padding: 20px 40px;
   background-color: #F2F5F7;
-  @include mq('md') {
-    padding: 20px 20px 20px 50px;
-  }
+}
+
+.message__navItem:hover {
+  opacity: 0.7;
+	transition: 0.3s;
 }
 
 .message__navItem:nth-of-type(1) {
@@ -154,12 +155,18 @@
 }
 
 .message__navItemText {
+  width: 100%;
+  display: inline-block;
+  padding: 20px 40px;
   position: relative;
   font-size: 15px;
   color: #000;
   font-family: $main-font;
   font-weight: 700;
   white-space: nowrap;
+    @include mq('md') {
+    padding: 20px 20px 20px 50px;
+  }
 }
 
 .message__navItemText.message__navItemText--first::before {
@@ -170,8 +177,11 @@
   height: 2px;
   background-color: $main-color;
   top: 52%;
-  left: -30%;
+  left: 24px;
   transform: translate(-50%, -50%);
+  @include mq('md') {
+  left: 32px;
+  }
 }
 
 .message__navItemText.message__navItemText--white {

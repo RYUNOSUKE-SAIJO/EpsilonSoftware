@@ -16,6 +16,11 @@
   line-height: normal;
 }
 
+.breadcrumb__item:hover {
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
 .breadcrumb__item.is-current {
   text-decoration: underline;
 }

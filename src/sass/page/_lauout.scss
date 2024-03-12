@@ -11,21 +11,19 @@
 .l-decorationImg_1 {
     left: 20%;
     position: absolute;
-    top: 716px;
+    top: 0%;
     z-index: 2;
     @include mq('md') {
         left: 14%;
         position: absolute;
-        top: 1098px;
+        top: 65%;
         z-index: 2;
     }
 }
 
 .l-companyInfo {
     background-color: #F2F5F7;
-    @include mq('md') {
-
-    }
+    position: relative;
 }
 
 .l-news {

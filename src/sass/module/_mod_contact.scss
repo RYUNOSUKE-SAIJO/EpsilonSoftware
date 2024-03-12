@@ -1,25 +1,11 @@
 @use "global" as *;
 
-.contact {
-
-}
-
-.contact__inner {
-
-}
-
-.contact__container {
-
-}
 
 .contact__sectionTItleWrap {
   display: flex;
   justify-content: center;
 }
 
-.contact__sectionTitle {
-
-}
 
 .contact__body {
   text-align: center;
@@ -49,6 +35,11 @@
     @include mq('md') {
       margin-top: 28px;
     }
+}
+
+.contact__btn:hover {
+  opacity: 0.7;
+	transition: 0.3s;
 }
 
 .contact__btn a {

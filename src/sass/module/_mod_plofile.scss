@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.plofile {
-
-}
-
-.plofile__container {
-
-}
-
 .plofile__title {
   font-size: 26px;
   color: #000;
@@ -45,10 +37,6 @@
 
 .plofile__foot {
   margin-top: 60px;
-}
-
-.plofile__footList {
-
 }
 
 .plofile__footItem {
@@ -98,6 +86,11 @@
   max-width: 30px;
 }
 
+.plofile__footItemSns:hover {
+  opacity: 0.7;
+	transition: 0.3s;
+}
+
 .plofile__footItemCompany {
   height: auto;
   aspect-ratio: 144 / 44;
@@ -105,3 +98,7 @@
   max-width: 144px;
 }
 
+.plofile__footItemCompany:hover {
+  opacity: 0.7;
+	transition: 0.3s;
+}
