@@ -1,87 +1,126 @@
 @use "global" as *;
 
 .btnWrap {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: end;
-  position: relative;
-  z-index: 2;
+	align-items: center;
+	display: flex;
+	gap: 20px;
+	justify-content: end;
+	position: relative;
+	z-index: 2;
 }
 
 .btn {
-  text-align: center;
+	text-align: center;
 }
 
 .btn a {
-  background-color: transparent;
-  border: 1px solid $main-color;
-  border-radius: 50px;
-  color: $main-color;
-  display: block;
-  font-size: 20px;
-  padding: 20px;
-  position: relative;
-  text-decoration: none;
-  width: 52px;
-  height: 52px;
+	-webkit-text-decoration: none;
+	background-color: transparent;
+	border: 1px solid #00AEBB;
+	border-radius: 50px;
+	color: #00AEBB;
+	display: block;
+	font-size: 20px;
+	height: 52px;
+	padding: 20px;
+	position: relative;
+	text-decoration: none;
+	width: 52px;
 }
+
+/* ヘッダードロップダウンメニュー */
+
+.btn.btn--small a {
+	-webkit-text-decoration: none;
+	background-color: transparent;
+	border: 1px solid #00AEBB;
+	border-radius: 50px;
+	color: #00AEBB;
+	display: block;
+	font-size: 20px;
+	height: 18px;
+	padding: 9px;
+	position: relative;
+	text-decoration: none;
+	width: 18px;
+}
+
+.btn.btn--small a::before {
+	border-right: 2px solid #00AEBB;
+	border-top: 2px solid #00AEBB;
+	height: 6px;
+	width: 6px;
+	right: 4px;
+	top: 6px;
+}
+
+.btn.btn--small a::after {
+	border-right: 2px solid #00AEBB;
+	border-top: 2px solid #00AEBB;
+	height: 0px;
+	left: 4px;
+	top: 8px;
+	width: 10px;
+}
+
 /* 通常の矢印(hoverで反転) */
+
 .btn a {
-  transition: all .5s;
+	transition: all 0.5s;
 }
 
 .btn a::before {
-  border-right: 3px solid $main-color;
-  border-top: 3px solid $main-color;
-  content: "";
-  height: 12px;
-  margin: auto;
-  position: absolute;
-  right: 12px;
-  top: 17.5px;
-  transform: rotate(45deg);
-  transition: all .5s;
-  width: 12px;
+	border-right: 3px solid #00AEBB;
+	border-top: 3px solid #00AEBB;
+	content: "";
+	height: 12px;
+	margin: auto;
+	position: absolute;
+	right: 12px;
+	top: 17.5px;
+	transform: rotate(45deg);
+	transition: all 0.5s;
+	width: 12px;
 }
 
 .btn a::after {
-  border-right: 3px solid $main-color;
-  border-top: 3px solid $main-color;
-  top: 22px;
-  left: 12px;
-  content: "";
-  height: 0px;
-  width: 25px;
-  margin: auto;
-  position: absolute;
-  transition: all .5s;
+	border-right: 3px solid #00AEBB;
+	border-top: 3px solid #00AEBB;
+	content: "";
+	height: 0px;
+	left: 12px;
+	margin: auto;
+	position: absolute;
+	top: 22px;
+	transition: all 0.5s;
+	width: 25px;
 }
 
 .btn a:hover {
-  background-color: $main-color;
-  color: $main-color;
+	background-color: #00AEBB;
+	color: #00AEBB;
 }
 
 .btn a:hover::before {
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	border-top: 3px solid #fff;
 }
+
 .btn a:hover::after {
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	border-top: 3px solid #fff;
 }
 
 .btn__text {
-  font-size: 14px;
-  color: #000;
-  font-family: $main-font;
-  font-weight: 700;
+	color: #000;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .btn__text--white {
-  font-size: 14px;
-  color: #ffffff;
-  font-family: $main-font;
-  font-weight: 700;
+	color: #ffffff;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
 }

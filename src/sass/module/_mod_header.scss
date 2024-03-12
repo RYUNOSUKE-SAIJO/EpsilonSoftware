@@ -53,11 +53,7 @@
 
 .header__navItem {
     height: inherit;
-}
-
-.header__navItem:hover {
-    opacity: 0.7;
-	transition: 0.3s;
+    transition: all 0.3s ease 0s;
 }
 
 .header__navItem a {
@@ -108,9 +104,45 @@
     background: url(../images/common/mail_icon.svg) no-repeat center center / cover;
 }
 
-.header__navItem.header__navItem--white a {
+.header__navItem.header__navItem--white > a {
+	color: #fff;
+}
+
+
+
+// hover //
+
+.header__navItem:hover > a {
+	color: #00AEBB;
+	transition: all 0.3s ease 0s;
+}
+
+.header__navItem a:hover {
+	color: #00AEBB;
+	transition: all 0.3s ease 0s;
+}
+
+
+.header__logo a:hover {
+	opacity: 0.7;
+}
+
+.header__navItem.header__navItem--facebook span:hover {
+    opacity: 0.7;
+}
+
+.header__navItem.header__navItem--contact a:hover {
+    opacity: 0.7;
     color: #fff;
 }
+
+/* ドロップダウンメニュー */
+.header__navItem:hover .dropMenuList {
+	visibility: visible;
+	opacity: 1;
+}
+
+
 
 
 /* ===============================================

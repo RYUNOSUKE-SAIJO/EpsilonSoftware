@@ -1,41 +1,45 @@
 @use "global" as *;
 
 .plusCircle {
-  display: inline-block;
-  vertical-align: middle;
-  color: #333;
-  line-height: 1;
-  position: relative;
-  width: 1em;
-  height: 1em;
-  border: 0.1em solid $main-color;
-  border-radius: 50%;
-  box-sizing: content-box;
-  margin-left: 5px;
+	border: 0.1em solid #00AEBB;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #333;
+	display: inline-block;
+	height: 1em;
+	line-height: 1;
+	margin-left: 5px;
+	position: relative;
+	vertical-align: middle;
+	width: 1em;
+}
+
+.header__navItem:hover .plusCircle span::before {
+	height: 0%;
 }
 
 .plusCircle > span {
-  width: 50%;
-  height: 1px;
-  background: $main-color;
-  border-radius: 0.1em;
-  position: relative;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  transform: translate(-50%, -50%);
+	background: #00AEBB;
+	border-radius: 0.1em;
+	bottom: 0;
+	height: 1px;
+	margin: auto;
+	position: relative;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(-50%, -50%);
+	width: 50%;
 }
 
 .plusCircle > span::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $main-color;
-  border-radius: inherit;
-  transform: rotate(90deg);
+	background: #00AEBB;
+	border-radius: inherit;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: rotate(90deg);
+	width: 100%;
 }

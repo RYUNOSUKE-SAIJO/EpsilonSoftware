@@ -1,0 +1,41 @@
+@use "global" as *;
+
+
+/* ドロップダウンメニュー */
+
+.dropMenu {
+  position: relative;
+}
+
+.dropMenuList {
+	right: -30px;
+	position: absolute;
+	top: 70%;
+	transform-origin: center top; /* 変形を適応する基準を設定 */
+	transition: 0.3s; /* 表示の変化をアニメーション化 */
+	width: 170px;
+	z-index: 1;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+	padding: 0 10px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.dropMenuItem {
+	display: flex;
+	justify-content: space-between;
+	padding: 6px 0;
+	transition: opacity 0.3s; /* 不透明度の変化をアニメーション化 */
+}
+
+.dropMenuItem a {
+	color: #000;
+  font-weight: 700;
+}
+
+.dropMenuItem:hover {
+	opacity: 0.8; /* ドロップダウンメニューアイテムのホバー時の不透明度 */
+	transition: opacity 0.3s; /* 不透明度の変化をアニメーション化 */
+}

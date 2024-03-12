@@ -18,7 +18,7 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <link rel="icon" href="./assets/images/common/epsilon_favicon.ico" />
   <!----- Google Font ----->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,14 +45,35 @@
     <header class="header l-header js-header">
       <div class="header__inner">
         <div class="header__logo">
-          <a href="#">
+          <a href="index.html">
             <img src="./assets/images/common/header-logo2.png" alt="会社ロゴ">
           </a>
         </div>
         <nav class="header__nav">
           <ul class="header__navItems">
-            <li class="header__navItem header__navItem--white header__navItem--plus">
+            <li class="header__navItem header__navItem--white header__navItem--plus dropMenu">
               <a href="#">会社情報&nbsp;<span class="plusCircle"><span></span></span></a>
+              <!----- ドロップダウンメニュー ----->
+              <ul class="dropMenuList">
+                <li class="dropMenuItem">
+                  <a href="sub_message.html">代表挨拶</a>
+                  <div class="btn btn--small">
+                    <a href="sub_message.html"></a>
+                  </div>
+                </li>
+                <li class="dropMenuItem">
+                  <a href="#">会社概要・沿革</a>
+                  <div class="btn btn--small">
+                    <a href="sub_message.html"></a>
+                  </div>
+                </li>
+                <li class="dropMenuItem">
+                  <a href="#">アクセス</a>
+                  <div class="btn btn--small">
+                    <a href="sub_message.html"></a>
+                  </div>
+                </li>
+              </ul>
             </li>
             <li class="header__navItem header__navItem--white">
               <a href="#">お知らせ</a>
@@ -362,7 +383,9 @@
             </nav>
           </div>
           <div class="footer__logoImg">
-            <img src="./assets/images/common/footer_logo.svg" alt="会社ロゴ">
+            <a href="index.html">
+              <img src="./assets/images/common/footer_logo.svg" alt="会社ロゴ">
+            </a>
           </div>
         </div>
         <div class="footer__foot">
