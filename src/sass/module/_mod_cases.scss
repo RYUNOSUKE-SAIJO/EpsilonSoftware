@@ -95,6 +95,7 @@
 .cases__btn {
   margin-top: 25px;
   margin-left: auto;
+  text-align: end;
   @include mq('md') {
     margin-top: 36px;
   }

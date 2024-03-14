@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .l-header {
-    position: fixed;
+    position: absolute;
     z-index: 900;
     top: 0;
     right: 0;
@@ -11,12 +11,14 @@
 .l-decorationImg_1 {
     left: 20%;
     position: absolute;
-    top: 0%;
+    top: -16px;
+    bottom: auto;
     z-index: 2;
     @include mq('md') {
+        top: auto;
         left: 14%;
         position: absolute;
-        top: 65%;
+        bottom: -12%;
         z-index: 2;
     }
 }

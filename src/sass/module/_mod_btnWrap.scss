@@ -1,19 +1,23 @@
 @use "global" as *;
 
 .btnWrap {
-	align-items: center;
+	display: inline-block;
+}
+
+.btnLink {
 	display: flex;
+	align-items: center;
 	gap: 20px;
 	justify-content: end;
 	position: relative;
-	z-index: 2;
 }
 
 .btn {
 	text-align: center;
+	transition: all 0.5s;
 }
 
-.btn a {
+.btn {
 	-webkit-text-decoration: none;
 	background-color: transparent;
 	border: 1px solid #00AEBB;
@@ -30,7 +34,7 @@
 
 /* ヘッダードロップダウンメニュー */
 
-.btn.btn--small a {
+.btn.btn--small {
 	-webkit-text-decoration: none;
 	background-color: transparent;
 	border: 1px solid #00AEBB;
@@ -46,70 +50,139 @@
 }
 
 .btn.btn--small a::before {
+	content: "";
+	position: absolute;
 	border-right: 2px solid #00AEBB;
 	border-top: 2px solid #00AEBB;
 	height: 6px;
 	width: 6px;
 	right: 4px;
 	top: 6px;
+	margin: auto;
+	transform: rotate(45deg);
+	transition: all 0.5s;
+	z-index: 2;
 }
 
 .btn.btn--small a::after {
+	content: "";
+	position: absolute;
 	border-right: 2px solid #00AEBB;
 	border-top: 2px solid #00AEBB;
 	height: 0px;
 	left: 4px;
 	top: 8px;
 	width: 10px;
+	margin: auto;
+	transition: all 0.5s;
+	z-index: 2;
+}
+
+.btnArrow {
+    background-color: #00AEBB;
+    height: 3px;
+    left: 13px;
+    position: absolute;
+    top: 23px;
+    width: 25px;
+		border-radius: 10px;
+}
+
+.btnArrow::before {
+		background-color: #00AEBB;
+    content: "";
+    height: 2px;
+    left: 10px;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-35deg);
+    width: 16px;
+		border-radius: 20px;
+}
+
+.btnArrow::after{
+    background-color: #00AEBB;
+    content: "";
+    height: 2px;
+    left: 10px;
+    position: absolute;
+    top: -4px;
+    transform: rotate(35deg);
+    width: 16px;
+		border-radius: 20px;
 }
 
 /* 通常の矢印(hoverで反転) */
 
-.btn a {
-	transition: all 0.5s;
-}
+// .btn a::before {
+// 	border-right: 3px solid #00AEBB;
+// 	border-top: 3px solid #00AEBB;
+// 	content: "";
+// 	height: 12px;
+// 	margin: auto;
+// 	position: absolute;
+// 	right: 12px;
+// 	top: 17.5px;
+// 	transform: rotate(45deg);
+// 	transition: all 0.5s;
+// 	width: 12px;
+// }
 
-.btn a::before {
-	border-right: 3px solid #00AEBB;
-	border-top: 3px solid #00AEBB;
-	content: "";
-	height: 12px;
-	margin: auto;
-	position: absolute;
-	right: 12px;
-	top: 17.5px;
-	transform: rotate(45deg);
-	transition: all 0.5s;
-	width: 12px;
-}
+// .btn a::after {
+// 	border-right: 3px solid #00AEBB;
+// 	border-top: 3px solid #00AEBB;
+// 	content: "";
+// 	height: 0px;
+// 	left: 12px;
+// 	margin: auto;
+// 	position: absolute;
+// 	top: 22px;
+// 	transition: all 0.5s;
+// 	width: 25px;
+// }
 
-.btn a::after {
-	border-right: 3px solid #00AEBB;
-	border-top: 3px solid #00AEBB;
-	content: "";
-	height: 0px;
-	left: 12px;
-	margin: auto;
-	position: absolute;
-	top: 22px;
-	transition: all 0.5s;
-	width: 25px;
-}
-
-.btn a:hover {
+.btn:hover {
 	background-color: #00AEBB;
 	color: #00AEBB;
 }
 
-.btn a:hover::before {
+
+/* -- ボタン hover -- */
+.btn:hover a::before {
+	border-right: 2px solid #fff;
+	border-top: 2px solid #fff;
+}
+
+.btn:hover a::after {
+	border-right: 2px solid #fff;
+	border-top: 2px solid #fff;
+}
+
+/*  btnArrow  */
+.btn:hover .btnArrow {
+	background-color: #fff;
+}
+
+.btn:hover .btnArrow::before {
 	border-right: 3px solid #fff;
 	border-top: 3px solid #fff;
 }
 
-.btn a:hover::after {
+.btn:hover .btnArrow::after {
 	border-right: 3px solid #fff;
 	border-top: 3px solid #fff;
 }
+
+// .btn:hover + .btn__text {
+// 	opacity: 0.7;
+// 	transition: all 0.3s;
+// }
+
+.btnWrap:hover .btn__text {
+	opacity: 0.7;
+	transition: all 0.3s;
+}
+
 
 .btn__text {
 	color: #000;
@@ -118,7 +191,7 @@
 	font-weight: 700;
 }
 
-.btn__text--white {
+.btn__text.btn__text--white {
 	color: #ffffff;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 14px;

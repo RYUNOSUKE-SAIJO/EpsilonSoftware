@@ -2,10 +2,13 @@
 
 .mv {
     position: relative;
-    height: 100vh;
+    height: 780px;
     min-height: 710px;
     background-color: #F2F5F7;
     overflow: hidden;
+    @include mq('md') {
+        height: 904px;
+    }
 }
 
 .mv__inner {
@@ -51,7 +54,7 @@
     margin: auto;
     width: 100%;
     @include mq('md') {
-        top: 42vh;
+        top: 384px;
     }
 }
 
