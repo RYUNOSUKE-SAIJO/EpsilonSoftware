@@ -54,26 +54,26 @@
             <li class="header__navItem header__navItem--white header__navItem--plus dropMenu">
               <a href="#">会社情報&nbsp;<span class="plusCircle"><span></span></span></a>
               <!----- ドロップダウンメニュー ----->
-              <ul class="dropMenuList">
-                <li class="dropMenuItem">
-                  <a href="sub_message.html">代表挨拶</a>
-                  <div class="btn btn--small">
-                    <a href="sub_message.html"></a>
-                  </div>
-                </li>
-                <li class="dropMenuItem">
-                  <a href="#">会社概要・沿革</a>
-                  <div class="btn btn--small">
-                    <a href="sub_message.html"></a>
-                  </div>
-                </li>
-                <li class="dropMenuItem">
-                  <a href="#">アクセス</a>
-                  <div class="btn btn--small">
-                    <a href="sub_message.html"></a>
-                  </div>
-                </li>
-              </ul>
+                <ul class="dropMenuList">
+                  <li class="dropMenuItem">
+                    <a href="sub_message.html" class="dropMenuItem__link">
+                      <p>代表挨拶</p>
+                      <span class="dropMenuItem__btn"></span>
+                    </a>
+                  </li>
+                  <li class="dropMenuItem">
+                    <a href="sub_message.html" class="dropMenuItem__link">
+                      <p>会社概要・沿革</p>
+                      <span class="dropMenuItem__btn"></span>
+                    </a>
+                  </li>
+                  <li class="dropMenuItem">
+                    <a href="sub_message.html" class="dropMenuItem__link">
+                      <p>アクセス</p>
+                      <span class="dropMenuItem__btn"></span>
+                    </a>
+                  </li>
+                </ul>
             </li>
             <li class="header__navItem header__navItem--white">
               <a href="#">お知らせ</a>
@@ -101,31 +101,44 @@
           <span></span>
         </button>
         <div class="header__drawer js-drawer">
-          <nav class="header__drawerNav">
-            <ul class="header__drawerItems">
-              <li class="header__drawerItem header__drawerItem--plus">
-                <a href="#">会社情報&nbsp;<span></span></a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">お知らせ</a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">受託開発事業について</a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">実績紹介</a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">採用情報</a>
-              </li>
-              <li class="header__drawerItem header__drawerItem--facebook">
-                <a href="#"><span></span></a>
-              </li>
-              <li class="header__drawerItem header__drawerItem--contact">
-                <a href="#"><span></span>お問い合わせ</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="header__drawerInner inner">
+            <div class="header__drawerLogo">
+              <a href="index.html">
+                <img src="./assets/images/common/header-logo2.png" alt="会社ロゴ">
+              </a>
+            </div>
+            <nav class="header__drawerNav">
+              <ul class="header__drawerItems">
+                <li class="header__drawerItem header__drawerItem--borderTop">
+                  <a class="header__drawerItemTitle" href="#">会社情報&nbsp;<span></span></a>
+                  <a class="header__drawerItemText" href="sub_message.html">代表挨拶</a>
+                  <a class="header__drawerItemText" href="#">会社概要・沿革</a>
+                  <a class="header__drawerItemText" href="#">アクセス</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">お知らせ</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">受託開発事業について</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">実績紹介</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">採用情報</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">お問い合わせ</a>
+                </li>
+                <li class="header__drawerItem header__drawerItem--facebook">
+                  <a class="header__drawerItemTitle" href="#"><span></span></a>
+                </li>
+                <li class="header__drawerItem header__drawerItem--company">
+                  <a class="header__drawerItemTitle" href="#"><span></span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -239,7 +252,7 @@
                 <li class="message__navItem">
                   <a class="message__navItemText message__navItemText--first message__navItemText--white" href="sub_message.html">会社情報</a>
                 </li>
-                <li class="message__navItem">
+                <li class="message__navItem is-active">
                   <a class="message__navItemText message__navItemText--white" href="sub_message.html">代表挨拶</a>
                 </li>
                 <li class="message__navItem">

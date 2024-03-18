@@ -7,7 +7,7 @@ jQuery(function ($) {
     loop: true,
     speed: 6000,
     spaceBetween: 12,
-    slidesPerView: 1.7,
+    slidesPerView: 'auto',
     centeredSlides: true, // アクティブなスライドを中央にする
     allowTouchMove: false, // スワイプ無効
     autoplay: {
@@ -17,11 +17,11 @@ jQuery(function ($) {
     breakpoints: {
       768: {
         spaceBetween: 20,
-        slidesPerView: 3.5,
+        // slidesPerView: 3.5,
       },
       500: {
         spaceBetween: 20,
-        slidesPerView: 2,
+        // slidesPerView: 2,
       },
     },
   });
@@ -137,6 +137,27 @@ jQuery(function ($) {
         });
       });
     }
+
+    /* ===============================================
+    # news タブ切り替え
+    =============================================== */
+
+    $(function () {
+      // ①タブをクリックしたら発動
+      $(".news__tabList li").click(function () {
+        // ②クリックされたタブの順番を変数に格納
+        var index = $(".news__tabList li").index(this);
+
+        // ③クリック済みタブのデザインを設定したcssのクラスを一旦削除
+        $(".news__tabList li").removeClass("is-active");
+
+        // ④クリックされたタブにクリック済みデザインを適用する
+        $(this).addClass("is-active");
+
+        // ⑤コンテンツを一旦非表示にし、クリックされた順番のコンテンツのみを表示
+        $(".news__postList").removeClass("show").eq(index).addClass("show");
+      });
+    });
 
 
 

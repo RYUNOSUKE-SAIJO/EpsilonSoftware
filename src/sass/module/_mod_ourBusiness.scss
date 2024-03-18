@@ -56,7 +56,12 @@
 }
 
 .ourBusiness__text {
-
+    font-size: 15px;
+    color: #000;
+    letter-spacing: 0.05em;
+    line-height : calc(28 / 15);
+    font-family: $main-font;
+    font-weight: 400;
 }
 
 .ourBusiness__btn {

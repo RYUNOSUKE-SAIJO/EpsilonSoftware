@@ -16,7 +16,7 @@
     z-index: 2;
     @include mq('md') {
         top: auto;
-        left: 14%;
+        left: calc(50% - min(42vw, 500px));
         position: absolute;
         bottom: -12%;
         z-index: 2;

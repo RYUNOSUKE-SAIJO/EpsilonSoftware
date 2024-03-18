@@ -2,7 +2,7 @@
 
 .mv {
     position: relative;
-    height: 780px;
+    height: 800px;
     min-height: 710px;
     background-color: #F2F5F7;
     overflow: hidden;
@@ -50,11 +50,11 @@
 .mv__swiper {
     margin-right: calc(50% - 50vw);
     position: absolute;
-    top: 59vh;
+    top: 54%;
     margin: auto;
     width: 100%;
     @include mq('md') {
-        top: 384px;
+        top: 40%;
     }
 }
 

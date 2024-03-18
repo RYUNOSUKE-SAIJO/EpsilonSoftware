@@ -32,51 +32,6 @@
 	width: 52px;
 }
 
-/* ヘッダードロップダウンメニュー */
-
-.btn.btn--small {
-	-webkit-text-decoration: none;
-	background-color: transparent;
-	border: 1px solid #00AEBB;
-	border-radius: 50px;
-	color: #00AEBB;
-	display: block;
-	font-size: 20px;
-	height: 18px;
-	padding: 9px;
-	position: relative;
-	text-decoration: none;
-	width: 18px;
-}
-
-.btn.btn--small a::before {
-	content: "";
-	position: absolute;
-	border-right: 2px solid #00AEBB;
-	border-top: 2px solid #00AEBB;
-	height: 6px;
-	width: 6px;
-	right: 4px;
-	top: 6px;
-	margin: auto;
-	transform: rotate(45deg);
-	transition: all 0.5s;
-	z-index: 2;
-}
-
-.btn.btn--small a::after {
-	content: "";
-	position: absolute;
-	border-right: 2px solid #00AEBB;
-	border-top: 2px solid #00AEBB;
-	height: 0px;
-	left: 4px;
-	top: 8px;
-	width: 10px;
-	margin: auto;
-	transition: all 0.5s;
-	z-index: 2;
-}
 
 .btnArrow {
     background-color: #00AEBB;
@@ -141,34 +96,34 @@
 // 	width: 25px;
 // }
 
-.btn:hover {
+.btnWrap:hover .btn {
 	background-color: #00AEBB;
 	color: #00AEBB;
 }
 
 
 /* -- ボタン hover -- */
-.btn:hover a::before {
+.btnWrap:hover a::before {
 	border-right: 2px solid #fff;
 	border-top: 2px solid #fff;
 }
 
-.btn:hover a::after {
+.btnWrap:hover a::after {
 	border-right: 2px solid #fff;
 	border-top: 2px solid #fff;
 }
 
 /*  btnArrow  */
-.btn:hover .btnArrow {
+.btnWrap:hover .btnArrow {
 	background-color: #fff;
 }
 
-.btn:hover .btnArrow::before {
+.btnWrap:hover .btnArrow::before {
 	border-right: 3px solid #fff;
 	border-top: 3px solid #fff;
 }
 
-.btn:hover .btnArrow::after {
+.btnWrap:hover .btnArrow::after {
 	border-right: 3px solid #fff;
 	border-top: 3px solid #fff;
 }
@@ -179,7 +134,7 @@
 // }
 
 .btnWrap:hover .btn__text {
-	opacity: 0.7;
+	opacity: 0.6;
 	transition: all 0.3s;
 }
 

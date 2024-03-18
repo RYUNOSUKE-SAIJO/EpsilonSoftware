@@ -54,22 +54,22 @@
               <!----- ドロップダウンメニュー ----->
                 <ul class="dropMenuList">
                   <li class="dropMenuItem">
-                    <a href="sub_message.html">代表挨拶</a>
-                    <div class="btn btn--small">
-                      <a href="sub_message.html"></a>
-                    </div>
+                    <a href="sub_message.html" class="dropMenuItem__link">
+                      <p>代表挨拶</p>
+                      <span class="dropMenuItem__btn"></span>
+                    </a>
                   </li>
                   <li class="dropMenuItem">
-                    <a href="#">会社概要・沿革</a>
-                    <div class="btn btn--small">
-                      <a href="#"></a>
-                    </div>
+                    <a href="sub_message.html" class="dropMenuItem__link">
+                      <p>会社概要・沿革</p>
+                      <span class="dropMenuItem__btn"></span>
+                    </a>
                   </li>
                   <li class="dropMenuItem">
-                    <a href="#">アクセス</a>
-                    <div class="btn btn--small">
-                      <a href="#"></a>
-                    </div>
+                    <a href="sub_message.html" class="dropMenuItem__link">
+                      <p>アクセス</p>
+                      <span class="dropMenuItem__btn"></span>
+                    </a>
                   </li>
                 </ul>
             </li>
@@ -99,31 +99,44 @@
           <span></span>
         </button>
         <div class="header__drawer js-drawer">
-          <nav class="header__drawerNav">
-            <ul class="header__drawerItems">
-              <li class="header__drawerItem header__drawerItem--plus">
-                <a href="#">会社情報&nbsp;<span></span></a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">お知らせ</a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">受託開発事業について</a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">実績紹介</a>
-              </li>
-              <li class="header__drawerItem">
-                <a href="#">採用情報</a>
-              </li>
-              <li class="header__drawerItem header__drawerItem--facebook">
-                <a href="#"><span></span></a>
-              </li>
-              <li class="header__drawerItem header__drawerItem--contact">
-                <a href="#"><span></span>お問い合わせ</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="header__drawerInner inner">
+            <div class="header__drawerLogo">
+              <a href="index.html">
+                <img src="./assets/images/common/header-logo2.png" alt="会社ロゴ">
+              </a>
+            </div>
+            <nav class="header__drawerNav">
+              <ul class="header__drawerItems">
+                <li class="header__drawerItem header__drawerItem--borderTop">
+                  <a class="header__drawerItemTitle" href="#">会社情報&nbsp;<span></span></a>
+                  <a class="header__drawerItemText" href="sub_message.html">代表挨拶</a>
+                  <a class="header__drawerItemText" href="#">会社概要・沿革</a>
+                  <a class="header__drawerItemText" href="#">アクセス</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">お知らせ</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">受託開発事業について</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">実績紹介</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">採用情報</a>
+                </li>
+                <li class="header__drawerItem">
+                  <a class="header__drawerItemTitle" href="#">お問い合わせ</a>
+                </li>
+                <li class="header__drawerItem header__drawerItem--facebook">
+                  <a class="header__drawerItemTitle" href="#"><span></span></a>
+                </li>
+                <li class="header__drawerItem header__drawerItem--company">
+                  <a class="header__drawerItemTitle" href="#"><span></span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -139,6 +152,24 @@
           <div class="mv__swiper">
             <div class="swiper js-mv__swiper">
               <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image01_dummy.jpg" alt="スライド画像1">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image02_dummy.jpg" alt="スライド画像2">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image03.jpg" alt="スライド画像3">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image04.jpg" alt="スライド画像4">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image05.jpg" alt="スライド画像5">
+                </li>
+                <li class="swiper-slide">
+                  <img src="./assets/images/common/top_image06.jpg" alt="スライド画像6">
+                </li>
                 <li class="swiper-slide">
                   <img src="./assets/images/common/top_image01_dummy.jpg" alt="スライド画像1">
                 </li>
@@ -208,6 +239,7 @@
               </div>
               <h3 class="sectionTitle__main">お知らせ</h3>
             </div>
+            <!----- タブ切り替え ----->
             <ul class="news__tabList">
               <li class="news__tabItem is-active">すべて</li>
               <li class="news__tabItem">重&nbsp;&nbsp;要</li>
@@ -215,44 +247,129 @@
               <li class="news__tabItem">採用情報</li>
             </ul>
           </div>
-          <ul class="news__postList">
+          <!----- all ----->
+          <ul class="news__postList show">
             <li class="news__postItem">
-              <div class="news__info">
-                <p class="news__date">2024.01.27</p>
-                <p class="news__tag">採用情報</p>
-              </div>
-              <div class="news__body">
-                <p class="news__text">●年度会社説明会のお知らせ</p>
-              </div>
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">採用情報</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">●年度会社説明会のお知らせ</p>
+                </div>
+              </a>
             </li>
             <li class="news__postItem">
-              <div class="news__info">
-                <p class="news__date">2024.01.27</p>
-                <p class="news__tag">お知らせ</p>
-              </div>
-              <div class="news__body">
-                <p class="news__text">インターネット回線切り替えに伴う電話不通のお知らせ</p>
-              </div>
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">お知らせ</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">インターネット回線切り替えに伴う電話不通のお知らせ</p>
+                </div>
+              </a>
             </li>
             <li class="news__postItem">
-              <div class="news__info">
-                <p class="news__date">2024.01.27</p>
-                <p class="news__tag">重要</p>
-              </div>
-              <div class="news__body">
-                <p class="news__text">年末年始休業について</p>
-              </div>
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">重要</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">年末年始休業について</p>
+                </div>
+              </a>
             </li>
             <li class="news__postItem">
-              <div class="news__info">
-                <p class="news__date">2024.01.27</p>
-                <p class="news__tag">お知らせ</p>
-              </div>
-              <div class="news__body">
-                <p class="news__text">ウェブ情報誌「●●●●●」に掲載されました</p>
-              </div>
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">お知らせ</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">ウェブ情報誌「●●●●●」に掲載されました</p>
+                </div>
+              </a>
             </li>
           </ul>
+          <!----- 重要 ----->
+          <ul class="news__postList">
+            <li class="news__postItem">
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">重要</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">年末年始休業について</p>
+                </div>
+              </a>
+            </li>
+            <li class="news__postItem">
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">重要</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">年末年始休業について</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!----- お知らせ ----->
+          <ul class="news__postList">
+            <li class="news__postItem">
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">お知らせ</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">インターネット回線切り替えに伴う電話不通のお知らせ</p>
+                </div>
+              </a>
+            </li>
+            <li class="news__postItem">
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">お知らせ</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">ウェブ情報誌「●●●●●」に掲載されました</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!----- 採用情報 ----->
+          <ul class="news__postList">
+            <li class="news__postItem">
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">採用情報</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">●年度会社説明会のお知らせ</p>
+                </div>
+              </a>
+            </li>
+            <li class="news__postItem">
+              <a class="news__postItemLink" href="#">
+                <div class="news__info">
+                  <p class="news__date">2024.01.27</p>
+                  <p class="news__tag">採用情報</p>
+                </div>
+                <div class="news__body">
+                  <p class="news__text">●年度会社説明会のお知らせ</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!----- ボタン ----->
           <div class="news__btn">
             <div class="news__btnWrap btnWrap">
                 <a href="" class="btnLink">
@@ -489,7 +606,7 @@
             <div class="footer__infoWrap">
               <div class="footer__info">
                 <div class="footer__titleImg">
-                  <img src="/assets/images/common/foot_logoName.svg" alt="会社名ロゴ">
+                  <img src="./assets/images/common/foot_logoName.svg" alt="会社名ロゴ">
                 </div>
                 <div class="footer__access">
                   <p>〒690-0061 島根県松江市白潟本町13番地4<br class="u-mobile">大樹生命松江ビル2階</p>

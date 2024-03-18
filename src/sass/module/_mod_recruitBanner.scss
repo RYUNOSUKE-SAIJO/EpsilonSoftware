@@ -3,6 +3,7 @@
 .recruitBanner {
   display: block;
 	width: 100vw;
+  background-color: $main-color;
   @include mq('md') {
     width: auto;
   }
@@ -30,6 +31,7 @@
 .recruitBanner a picture img {
   display: block;
 	width: 100vw;
+  height: 70px;
   @include mq('md') {
       height: auto;
       aspect-ratio: 70 / 210;

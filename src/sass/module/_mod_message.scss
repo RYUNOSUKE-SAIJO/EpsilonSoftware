@@ -133,16 +133,10 @@
 .message__navList {
   display: flex;
   flex-direction: column;
-  gap: 4px;
 }
 
 .message__navItem {
   background-color: #F2F5F7;
-}
-
-.message__navItem:hover {
-  opacity: 0.7;
-	transition: 0.3s;
 }
 
 .message__navItem:nth-of-type(1) {
@@ -150,9 +144,30 @@
   position: relative;
 }
 
-.message__navItem:nth-of-type(2) {
+.message__navItem.is-active {
   background-color: #00AEBB;
 }
+
+.message__navItem:nth-of-type(4) {
+  margin-top: 2px;
+}
+
+
+/* -- hover -- */
+
+.message__navItem:hover {
+	transition: 0.3s;
+}
+
+.message__navItem:hover {
+  background-color: #00AEBB;
+}
+
+.message__navItem:hover > .message__navItemText{
+  color: #fff;
+}
+
+
 
 .message__navItemText {
   width: 100%;

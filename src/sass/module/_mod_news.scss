@@ -44,6 +44,7 @@
   color: #000;
   font-family: $main-font;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .news__tabItem.is-active {
@@ -54,7 +55,30 @@
 
 // ポスト //
 
+.news__postList {
+  display: none;
+}
+
+.news__postList.show {
+  display: block;
+}
+
 .news__postItem {
+  transition: all 0.3s ease 0s;
+}
+
+.news__postItem:first-of-type {
+  border-top: 1px solid #E5E5E5;
+}
+
+.news__postItem:hover{
+  opacity: 0.7;
+  opacity: 0.7;
+  /*(↓疑似要素じゃない方に記述する)*/
+  transition: all 0.3s ease 0s;
+}
+
+.news__postItemLink {
   border-bottom: 1px solid #E5E5E5;
   padding: 20px 10px;
   @include mq('md') {
@@ -64,9 +88,6 @@
   }
 }
 
-.news__postItem:first-of-type {
-  border-top: 1px solid #E5E5E5;
-}
 
 .news__info {
   display: flex;
