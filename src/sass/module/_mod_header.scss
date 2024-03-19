@@ -154,7 +154,7 @@
     outline: none;
     border: none;
     position: relative;
-    z-index: 999;
+    z-index: 1001;
     width: 50px;
     height: 50px;
     background-color: $main-color;
@@ -223,7 +223,7 @@
     padding: 100px 0;
     display: none;
     position: absolute;
-    z-index: 900;
+    z-index: 1000;
     top: 0;
     right: 0;
     bottom: 0;
@@ -234,7 +234,7 @@
     // overflow-y: scroll;
     scrollbar-width: none;
     overflow-y: auto;
-    overscroll-behavior-y: none; 
+    overscroll-behavior-y: none;
 }
 
 .header__drawer::-webkit-scrollbar {
@@ -325,7 +325,7 @@
     margin: 0 auto;
     width: 40px;
     height: 40px;
-    background: url(../images/common/facebook.png) no-repeat center center / cover;
+    background: url(../images/common/facebook.svg) no-repeat center center / cover;
     border: none;
 }
 
